@@ -5,4 +5,24 @@ ifdef::env-draft[]
 TIP: _Properties of the environment that the system's operation must preserve, i.e., properties of the environment that operations of the system may assume to hold when they start, and must maintain._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Environmental Properties That Must Be Preserved
+
+The Sanskrit Manuscript Fragment Reconstruction Platform operates as a non-deterministic AI assistance tool that augments scholarly work without making critical decisions. These invariants ensure the system maintains its supportive role while preserving essential academic and research environment properties.
+
+===== 1. Scholarly Authority and Decision-Making Invariants
+
+*Human Scholar Final Authority*: All reconstruction conclusions and academic decisions must be made by qualified human scholars. The AI system provides suggestions and pattern matching assistance only, with scholars retaining complete authority over interpretation and validation of results.
+
+*Non-Deterministic AI Acknowledgment*: The system operates with the understanding that AI-powered fragment matching is inherently non-deterministic and probabilistic. Results are presented as suggestions requiring scholarly evaluation rather than definitive answers.
+
+*Academic Independence*: System operation cannot substitute for scholarly judgment or critical analysis. Researchers must maintain their role as the primary interpreters of manuscript evidence and cultural context.
+
+*Scholarly Evaluation Requirement*: All system outputs must be clearly presented as requiring academic evaluation and validation. The interface and documentation must emphasize the need for scholarly review of all AI-generated suggestions.
+
+===== 2. Data and Research Integrity Invariants
+
+*Original Data Preservation*: Digital fragment images and metadata must remain unaltered by system processing. All analysis is performed on copies, ensuring original cultural heritage materials are never modified or compromised.
+
+*Research Reproducibility*: While AI outputs may vary due to their non-deterministic nature, the underlying methodologies and data processing steps must be documented to support academic transparency and scholarly review.
+
+*Attribution and Provenance*: Original fragment attribution, provenance information, and institutional ownership must be preserved and clearly displayed. The system cannot obscure the source or ownership of cultural heritage materials.
