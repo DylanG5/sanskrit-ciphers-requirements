@@ -5,4 +5,48 @@ ifdef::env-draft[]
 TIP: _Specification of the conditions under which an implementation will be deemed satisfactory. Here, "verification" as shorthand for what is more explicitly called "Verification & Validation" (V&V), covering several levels of testing — module testing, integration testing, system testing, user acceptance testing — as well as other techniques such as static analysis and, when applicable, program proving._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Overview
+
+This section specifies conditions under which the Sanskrit Manuscript Fragment Reconstruction Platform will be deemed satisfactory for academic research use. The V&V framework focuses on core functionality while recognizing the platform serves as a non-critical AI assistance tool for scholarly research.
+
+===== 1. Functional Verification Criteria
+
+*Fragment Processing Pipeline*
+
+* **Image Segmentation and Measurement**: System processes British Library collection and user-submitted images with consistent segmentation and size measurement. Success threshold: ≥85% successful processing across diverse image conditions.
+
+* **Metadata Extraction**: System extracts script type, row count, and codicological features for filtering. Success threshold: ≥75% accuracy for primary metadata attributes.
+
+*Search and Filter Interface*
+
+* **Multi-Criteria Search Performance**: Fragment ID lookup and filter combinations perform responsively. Success threshold: ≤3 seconds response time for searches across 21,000-fragment collection.
+
+* **Canvas Workspace Functionality**: Drag-and-drop interface operates smoothly with session save/restore capability. Success threshold: Responsive manipulation (≤200ms) with reliable session management.
+
+===== 2. Non-Functional Verification Criteria
+
+*System Performance*
+
+* **Collection Handling**: System processes 21,000-fragment British Library collection and supports concurrent research use. Success threshold: ≤48 hours initial processing; supports 15+ concurrent users.
+
+* **AI Matching Assistance**: Physical compatibility suggestions demonstrate utility for scholarly evaluation. Success threshold: ≥60% of expert users find matching suggestions useful for research workflow.
+
+*Usability and Reliability*
+
+* **Research Workflow Usability**: Scholars can effectively use core features (search, filter, canvas) for manuscript reconstruction research. Success threshold: ≥80% task completion rate in user testing.
+
+* **System Availability**: Platform maintains consistent availability for academic research. Success threshold: ≥95% uptime during operational hours.
+
+===== 3. Academic Research Acceptance Criteria
+
+*Research Tool Validation*
+
+* **Scholarly Utility**: Platform demonstrates value as an AI assistance tool for Buddhist manuscript reconstruction research. Success threshold: Positive feedback from ≥3 pilot research projects.
+
+* **Data Integrity**: British Library collection data and user-submitted images are handled appropriately with preserved attribution. Success threshold: 100% preservation of original provenance and catalog information.
+
+===== 4. Testing and Validation Framework
+
+*Testing Approach*: Unit testing for image processing, integration testing for search functionality, system testing for complete workflows, and user acceptance testing with Buddhist Studies researchers.
+
+*Acceptance Decision*: Platform ready for deployment when core functionality (processing, search, canvas interface) operates reliably, British Library collection is accessible, and expert users validate research utility. Recognition that AI suggestions are non-deterministic and require scholarly evaluation.
