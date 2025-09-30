@@ -5,5 +5,61 @@ ifdef::env-draft[]
 TIP: _Overview of the functions (behavior) of the system. Principal properties only (details are in the System book). It is a short overview of the functions of the future system, a kind of capsule version of book S, skipping details but enabling readers to get a quick grasp of what the system will do._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Core System Functions
+
+The Sanskrit Manuscript Fragment Reconstruction Platform provides a web-based interface for Buddhist Studies scholars to systematically search, filter, and reconstruct ancient texts from the British Library's collection of 21,000 manuscript fragments. The system operates through three primary functional domains:
+
+===== 1. Fragment Preprocessing and Analysis
+
+*Image Processing Pipeline*
+* Automatically segment uploaded fragment images to isolate manuscript content from background
+* Determine actual physical size measurements of fragments from image data
+* Extract edge patterns, damage signatures, and physical characteristics for matching
+* Normalize images across different photography conditions and lighting for consistent analysis
+
+*Metadata Extraction*
+* Extract script characteristics, writing style patterns, and paleographic features
+* Identify number of text rows, folio information, and other codicological features
+* Generate searchable metadata attributes for filtering and discovery
+* Process both British Library collection and user-submitted images through the same pipeline
+
+===== 2. Criteria-Based Search and Filtering System
+
+*Multi-Criteria Filtering Interface*
+* Allow researchers to enter specific fragment IDs for targeted searches
+* Filter fragments by script type, number of text rows, folio numbers, physical dimensions
+* Apply damage pattern matching and edge compatibility criteria
+* Combine multiple filter criteria to narrow search results to relevant fragments
+
+*Puzzle-Like Matching Engine*
+* Compare physical edge patterns and damage signatures for potential fits
+* Identify fragments with compatible breaks, tears, and wear patterns
+* Generate ranked lists of potential matches based on physical compatibility
+* Support both automated matching suggestions and manual criteria specification
+
+===== 3. Interactive Reconstruction Workspace
+
+*Canvas-Based Assembly Interface*
+* Provide drag-and-drop canvas for virtually arranging and testing fragment combinations
+* Enable real-time manipulation of fragment positions and orientations
+* Support snap-to-fit functionality based on edge pattern analysis
+* Allow researchers to build and test reconstruction hypotheses visually
+
+*Session Management*
+* Save and restore reconstruction work sessions
+* Support multiple concurrent reconstruction projects
+* Enable export of reconstruction layouts and fragment arrangements
+* Track reconstruction progress and fragment relationship discoveries
+
+==== Integration and Data Management
+
+*British Library Integration*: Primary integration with British Library's collection of 21,000 manuscript fragment images, with automated processing pipeline for the complete collection.
+
+*User Image Submission*: Support for researchers to upload their own fragment images, which are automatically processed through the same segmentation, measurement, and feature extraction pipeline as the core collection.
+
+*Metadata and Provenance Management*: Maintain comprehensive metadata including fragment IDs, provenance information, physical measurements, and extracted features while preserving original catalog information.
+
+==== Workflow Integration
+
+The system supports a streamlined workflow: researchers enter fragment IDs or apply filter criteria → system returns matching fragments based on specified characteristics → researchers use the interactive canvas to test physical combinations → save reconstruction sessions for future work. The platform architecture enables efficient processing of the 21,000-fragment collection with responsive search and real-time canvas manipulation.
 
