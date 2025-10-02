@@ -8,6 +8,32 @@ endif::[]
 .High Level use cases diagram
 image::models/use_case.svg[scale=70%,align="center"]
 
-{emptysec}
+The system will support scholars of Buddhist textual history by providing tools that automate and accelerate the process of reconstructing fragmented manuscripts. The following main usage scenarios capture the essential ways in which users will interact with the system:
 
+.Fragment Orientation and Preparation
+* A scholar uploads a set of digitized manuscript images.
+* The system automatically cleans, crops, and regularizes the orientation of the fragments so that they are ready for analysis.
+
+.Fragment Matching and Reconstruction
+* The scholar requests possible matches for a selected fragment.
+* The system scans edges, shapes, and damage patterns, and proposes a ranked set of likely matches.
+* The scholar inspects the proposed matches and confirms or rejects them.
+
+.Script Identification
+* The scholar views a fragment of uncertain origin.
+* The system automatically identifies the palaeographical script (e.g., Sanskrit, Tibetan, Chinese) and displays the classification to the user.
+
+.Transcription Assistance
+* The scholar opens a fragment and requests an initial transcription.
+* The system provides a machine-generated transcription of visible characters, which the scholar can review, correct, and annotate.
+
+.Database Search and Exploration
+* The scholar queries the system’s database (e.g., “find all fragments in Gupta script with more than 5 visible lines of text”).
+* The system returns results that can be sorted, compared, and linked with other fragments.
+
+.Login
+* The scholar opens the system’s login page.
+* The scholar enters their username and password.
+* The system verifies the credentials.
+* If valid, the system grants access and displays the main dashboard.
 
