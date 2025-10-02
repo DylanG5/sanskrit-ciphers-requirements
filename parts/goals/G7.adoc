@@ -4,17 +4,3 @@
 ifdef::env-draft[]
 TIP: _Groups of people who can affect the project or be affected by it, and other places to consider for information about the project and system. It lists stakeholders and other requirements sources. It should define stakeholders as categories of people, not individuals, even if such individuals are known at the time of writing. The main goal of chapter <<g7>> is to avoid forgetting any category of people whose input is relevant to the project. It also lists documents and other information that the project, aside from soliciting input from stakeholders, can consult for requirements information._  <<BM22>>
 endif::[]
-
-The textual history of Indian Buddhism is fragmented across thousands of manuscript folios, preserved only in partial, damaged, or scattered forms. Traditionally, scholars reconstruct these texts manually through palaeographic study, transcription, and content comparison; a slow and error-prone process. Scholars in Religious Studies increasingly have access to digitized collections of ancient manuscripts, such as the approximately 21,000 photographed fragments in one major archive. While some existing computational tools exist for pattern recognition and Optical Pattern Recognition (OCR) none can tackle this problem as they are not designed for irregular, damaged, or arbitrarily oriented manuscript fragments. Without computational assistance, much of the potential in these digital collections remains locked and underutilized. Our goal is to build an end to end system that can take these fragments as inputs and return a list of the most likely matches based on certain AI algorithms. This coupled with a UI that can be easy for users to learn and help them with their research in constructing these fragments. 
-
-The general objectives of the project are to:
-* **Develop AI-supported software capable of preprocessing, analyzing, and matching manuscript fragments to accelerate scholarly reconstruction.
-* **Create tools to automatically regularize image orientation, detect edges and shapes, identify palaeographic scripts, and perform OCR transcription tuned for ancient Sanskrit manuscripts.
-* **Provide a searchable, structured database that enables scholars to track, organize, and connect fragments across collections.
-
-Given the complexity of the project, the work will be divided into subprojects, each addressing a distinct but interdependent stage of the scholarly workflow:
-* **Image Preprocessing – cutting out fragments, normalizing orientation, and cleaning input images.
-* **Fragment Analysis and Matching – detecting edges, shapes, and damage patterns to suggest probable fragment matches.
-* **OCR Transcription – classifying scripts (initially Sanskrit, extendable to Tibetan and Chinese) and transcribing visible text.
-* **Database Development – designing a searchable and sortable metadata repository for fragment storage, retrieval, and comparison.
-* **Together, these subprojects form an integrated system that not only assists in reconstructing ancient manuscripts but also builds a model for applying computational puzzle-solving approaches to the humanities at large.
