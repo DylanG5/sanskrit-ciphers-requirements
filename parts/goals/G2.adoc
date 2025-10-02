@@ -5,4 +5,11 @@ ifdef::env-draft[]
 TIP: _Current state of processes to be addressed by the project and the resulting system. It describes the current situation, upon which the system is expected to improve_  <<BM22>>
 endif::[]
 
-{emptysec}
+As of now, the reconstruction of Indian Buddhist text is a manual and scholar driven process. This process relies on comparing the edges, shapes, and damage of the fragments to to try and find relationships between them. Scholars have to traverse over thousands of fragments across multiple collections with little to no aid from existing computational tools. The current workflow typically involves: 
+
+* Visual inspection of the fragments to identify features like number of lines, edges, shapes and damage patterns to possibly find relationships between them
+* Paleographic study of the fragments to identify the script type and writing style. This can help determince region and time period of the fragments
+* Manual transcription of the fragments to identify the content and compare it with other fragments 
+* Cross referencing fragments with other known manuscripts to infer relationships or reconstruct missing sections
+
+As touched upon previously, current computational tools provide insufficient support for these tasks and are limited to simple OCR on clean text, basic string searches, or pattern recognition methods that fail when applied to irregular, damaged, or rotated manuscript fragments. As a result, the reconstruction process remains slow, error-prone, and highly dependent on the availability and judgment of individual scholars. This bottleneck not only delays large scale reconstruction efforts but also leaves significant portions of these manuscript collections underutilized, limiting progress in uncovering the cultural and historical insights they contain.
