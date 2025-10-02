@@ -5,6 +5,10 @@ ifdef::env-draft[]
 TIP: _Properties of the environment that may be assumed, with the goal of facilitating the project and simplifying the system. It defines properties that are not imposed by the environment (like those in <<e3>>) but assumed to hold, as an explicit decision meant to facilitate the system's construction._  <<BM22>>
 endif::[]
 
+The following assumptions have been made about the environment:
 
-{emptysec}
+*User Expertise*: It is assumed that users of the system will have a basic understanding of Buddhist studies and familiarity with digital tools for text analysis. This assumption allows the system to be designed with a focus on advanced features without needing to provide extensive tutorials or guidance for basic usage.
 
+*Dataset Availability*: It is assumed that a sufficient number of high quality text fragments will be available for the system. This assumption is crucial for the system's functionality, as it relies on the model being trained on a representative dataset of text fragments. 
+
+*Technological Infrastructure*: It is assumed that users will have access to modern computing devices and reliable internet connections. This assumption enables the system to implement advanced computational resources without being constrained by the limitations of users' hardware.

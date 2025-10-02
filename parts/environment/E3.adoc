@@ -5,4 +5,11 @@ ifdef::env-draft[]
 TIP: _Obligations and limits imposed on the project and system by the environment. This chapter defines non-negotiable restrictions coming from the environment (business rules, physical laws, engineering decisions), which the development will have to take into account._  <<BM22>>
 endif::[]
 
-{emptysec}
+
+The system and project are subject to the following constraints:
+
+*Data Privacy Regulations*: The system must comply with relevant data privacy laws. This includes ensuring that user data is collected, stored, and processed in a manner that respects user privacy. Furthermore, the fragments must be stored securely to prevent unauthorized access.
+
+*Performance Requirements*: The system must be capable of handling a large number of concurrent users without significant degradation in performance. This includes ensuring that response times for user actions remain within acceptable limits, even under high load conditions.
+
+*Security Standards*: The system must adhere to established security standards to protect against potential threats. This includes implementing robust authentication and authorization mechanisms to prevent access to unauthorized users.
