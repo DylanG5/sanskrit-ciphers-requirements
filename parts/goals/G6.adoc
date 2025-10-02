@@ -5,4 +5,22 @@ ifdef::env-draft[]
 TIP: _Aspects that the system need not address. It states what the system will not do. This chapter addresses a key quality attribute of good requirements: the requirements must be delimited (or “scoped”). <<g6>> is not, however, the place for an analysis of risks and obstacles, which pertain to the project rather than the goals and correspondingly appears in chapter <<p6>>._  <<BM22>>
 endif::[]
 
-{emptysec}
+To clearly delimit the project scope, the following activities are explicitly excluded from the system’s objectives:
+
+.Manual Scholarly Judgment
+* The system will not replace the expertise of scholars in making final decisions about fragment matches, transcriptions, or interpretations. It will only provide automated suggestions and tools for assistance.
+
+.Non-Buddhist Manuscripts
+* The system will not initially support manuscripts outside the field of Indian, Tibetan, or Chinese Buddhist textual traditions. Other languages, scripts, or literary traditions are out of scope.
+
+.Full Translation into Modern Languages
+* The system will not provide full automatic translations of reconstructed texts into modern languages (e.g., English, French, Hindi). Its role ends at transcription and cross-referencing.
+
+.Physical Conservation or Restoration
+* The system will not engage in physical preservation, repair, or handling of manuscripts. It applies only to digital images of fragments.
+
+.Non-Standard Inputs
+* The system will not accept non-image inputs (e.g., handwritten notes, modern typed transcriptions) for automated processing. Only digitized images of fragments will be handled.
+
+.Error Correction of Scholarly Input
+* The system will not validate or correct scholars’ manual annotations, transcriptions, or metadata edits. Responsibility for the accuracy of human input lies with the user.
