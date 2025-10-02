@@ -5,4 +5,44 @@ ifdef::env-draft[]
 TIP: _External systems, hardware and software, expected to be necessary for building the system. It lists external technology elements, such as program libraries and hardware devices, that the project is expected to require. Although the actual use of such products belongs to design and implementation rather than requirements, it is part of the requirements task to identify elements whose availability is critical to the success of the project — an important element of risk analysis (<<p6>>)._  <<BM22>>
 endif::[]
 
-{emptysec}
+The following external technology elements are required for the successful development and deployment of the Sanskrit Cipher system:
+
+==== Programming Languages
+- **Python** for machine learning models, image preprocessing, and backend pipelines.
+- **JavaScript/TypeScript** for frontend and backend development.
+- **C++** may be required for performance-critical modules.
+
+==== Libraries & Frameworks
+- **OpenCV** for image preprocessing and orientation correction.
+- **PyTorch / TensorFlow** for machine learning models, including OCR and script identification.
+- **scikit-learn** for probabilistic matching algorithms.
+- **SQLAlchemy** for database abstraction.
+- **React** for frontend development.
+- **Tailwind CSS** for frontend styling.
+- **Flask, FastAPI, or Django** as the backend API framework.
+
+==== Pre-trained Models
+- OCR models trained on Sanskrit or related Indic scripts.
+- Potential use of lightweight custom models if pre-trained solutions prove insufficient.
+
+==== Development Tools
+- **VSCode** as the main IDE.
+- **LaTeX/Markdown** for documentation.
+- **Doxygen** for API documentation.
+- **Postman** for API testing.
+
+==== Testing & Code Quality Tools
+- **Pytest** and **coverage.py** for backend testing and coverage.
+- **MyPy** and **Ruff** for Python type checking and linting.
+- **Jest** with React Testing Library for frontend testing.
+- **ESLint** and **Prettier** for frontend linting and formatting.
+- **Valgrind** for C++ modules, if used.
+
+==== Build & Automation
+- **Makefiles** for automated builds of modules and LaTeX documents.
+- **GitHub Actions** for CI/CD, including linting, testing, Docker builds, and PDF generation.
+
+==== Deployment & Infrastructure
+- **Docker** for containerized environments.
+- **GitHub Projects** for version control and project management.
+- **PostgreSQL or SQLite** as the database backend.

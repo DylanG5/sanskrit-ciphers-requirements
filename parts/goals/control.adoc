@@ -7,7 +7,7 @@
 |Section | Version | Lead | Delivered on| Reviewer | Approved on
 
 | **<<g1>>** |  |  |  |  |
-| **<<g2>>** |  |  |  |  |
+| **<<g2>>** | 1.0 | Umar | October 2nd, 2025 |  |
 | **<<g3>>** |  |  |  |  |
 | **<<g4>>** |  |  |  |  |
 | **<<g5>>** |  |  |  |  |

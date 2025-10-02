@@ -5,4 +5,45 @@ ifdef::env-draft[]
 TIP: _Initially, description of what the requirements process will be; later, report on its steps. It starts out as a plan for conducting the requirements elicitation process, but is meant to be updated as part of that process so that it includes the key lessons of elicitation._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Planned Process
+* We plan on using a couple of methods in order to elicit our requirements.
+** Semi-structured interviews (primary): 4–5 researchers, 20–30 minutes each, in-person or video call. Focused on pain points, workflows, and domain challenges.
+** Online survey (secondary): 25–30 academic community members. Short questionnaire to validate findings quantitatively.
+** Observational study (supplementary): 3–4 researchers observed for 1–2 hours to identify implicit behaviours and actual practices.
+** Structured interviews (excluded): Not chosen due to insufficient domain knowledge for effective closed questions.
+
+==== Target User Groups
+* Primary users
+** Buddhist studies professors and researchers.
+** Digital humanities scholars.
+** Manuscript specialists and palaeographers.
+* Secondary users
+** Graduate students working with ancient manuscripts and reconstruction tasks.
+
+==== Objectives
+* Understand current manual workflows and pain points in fragment reconstruction.
+* Identify functional needs for automated detection, matching, and transcription support.
+* Capture usability and workflow-integration requirements for academic research settings.
+* Establish expectations for accuracy, performance, and collaboration/sharing features.
+
+==== Instruments & Protocols
+* Interview guide
+** Recent tool usage (what/why/learning curve), challenges, desired features.
+** End-to-end walkthrough of receiving and processing a new fragment set.
+** Tracking/organization practices; progress management; collaboration needs.
+* Survey
+** Short, closed-ended items to validate priority features and pain points at scale.
+* Observation
+** Note actual vs. reported behaviours; tools used; environment constraints; implicit steps.
+* Recording & consent
+** Obtain consent for audio recording during interviews; anonymize notes for analysis.
+
+==== Reporting and Updates
+
+This section will be updated iteratively as elicitation is carried out:  
+
+* After interviews: Summarize recurring themes (pain points, desired features, implicit needs).  
+* After survey analysis: Report statistical validation of key requirements.  
+* After observational studies: Note discrepancies between reported and actual workflows.  
+
+The evolving results will be documented in the SRS, ensuring traceability between user needs and formal requirements.

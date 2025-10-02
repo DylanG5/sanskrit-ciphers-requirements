@@ -5,4 +5,35 @@ ifdef::env-draft[]
 TIP: _Any a priori choices binding the project to specific tools, hardware, languages or other technical parameters. Not all technical choices in projects derive from a pure technical analysis; some result from company policies. While some project members may dislike non-strictly-technical decisions, they are a fact of project life and must be documented, in particular for the benefit of one of the quality factors for requirements: "requirements must be justified"._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Mandatory Constraints
+
+*Licensing:*
+
+- General Public License (GPL) must be used for all project code.
+
+*Version Control:*
+
+- GitHub for version control and project management.
+
+- Feature-branch workflow with pull request reviews.
+
+*Programming Languages:*
+
+- Python: ML models and image processing.
+
+- JavaScript/TypeScript: Front-end and back-end development.
+
+==== Technical standards:
+
+*Code Quality:*
+
+- All code changes require pull request review and approval before merging.
+- Linting and style checking must pass before merge approval.
+
+*Build Automation:*
+
+- Continuous integration pipeline required.
+
+*Documentation:*
+
+- LaTeX for formal project documentation.

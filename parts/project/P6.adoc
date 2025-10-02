@@ -5,5 +5,48 @@ ifdef::env-draft[]
 TIP: _Potential obstacles to meeting the schedule of <<p4>>, and measures for adapting the plan if they do arise. It is essential to be on the lookout for events that could derail the project, and devise mitigation strategies. It can include a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for the project._  <<BM22>>
 endif::[]
 
+==== Technical Risks
 
-{emptysec}
+* OCR accuracy on damaged Sanskrit fragments may remain below acceptable thresholds. 
+** Mitigation: Evaluate existing OCR models or fine-tune lightweight models on curated samples. Integrate fallbacks like similarity-based matching when OCR fails.  
+
+* Integration of multiple models and pipelines could cause performance bottlenecks. 
+** Mitigation: Modular architecture with asynchronous execution and caching. Early profiling to identify bottlenecks.  
+
+* Image preprocessing may fail for severely degraded or rotated fragments.  
+** Mitigation: Implement multi-stage preprocessing (denoising, rotation correction, cropping). Validate on a diverse set of fragments during POC.  
+
+==== Organizational Risks
+
+* Team workload may conflict with other academic obligations.  
+** Mitigation: Task decomposition into small, reviewable units. Buffer periods built into schedule. Weekly progress tracking with GitHub Projects.  
+
+* Limited domain expertise in Sanskrit manuscripts within the team.
+** Mitigation: Weekly consultations with Dr. Shayne Clarke (project supervisor). Iterative feedback cycles after each milestone demonstration.  
+
+==== External Risks
+
+* Hardware and resource constraints may limit model training and testing.  
+** Mitigation: Prioritize lightweight models and use batching strategies during development. If larger-scale training or evaluation is required, request access to the clusters provided by the Department of Computing and Software at McMaster University.
+
+* Stakeholder engagement may be restricted by limited availability of the domain expert. 
+** Mitigation: Schedule consultations well in advance, prepare concise agendas, and use scholarly publications when direct input is not available.  
+
+==== SWOT Analysis
+
+* Strengths  
+** Multidisciplinary skillset across ML, image processing, and full-stack development.  
+** Strong project management practices (CI/CD, GitHub Projects, PR reviews).  
+
+* Weaknesses  
+** Limited prior exposure to Sanskrit OCR and palaeography.  
+** Heavy reliance on external resources (pre-trained models, domain expert, etc.).  
+
+* Opportunities
+** Develop a reusable research tool for manuscript studies.  
+** Potential collaboration with scholars and institutions holding large fragment collections.  
+
+* Threats  
+** OCR accuracy may not meet scholarly expectations.  
+** Project timeline is constrained by academic calendar deadlines.  
+** Risk of overfitting to small or curated test datasets.  
