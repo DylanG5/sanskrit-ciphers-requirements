@@ -5,4 +5,14 @@ ifdef::env-draft[]
 TIP: _How the system makes the functionality of <<s2>> available to the rest of the world, particularly user interfaces and program interfaces (APIs). It specifies how that functionality will be made available to the rest of the world, including people (users) and other systems. These are interfaces provided by the system to the outside; the other way around, interfaces from other systems, which the system may use, are specified in <<e2>>._  <<BM22>>
 endif::[]
 
-{emptysec}
+
+The system will provide the following interfaces:
+
+*User Interface*: The system will provide a web-based user interface that allows users to interact with the system's features. This interface will be accessible via modern web browsers and will be designed to be user-friendly and intuitive. It will include features for uploading, managing, and viewing text fragments, as well as tools for evaluating match suggestions and saving study sessions.
+
+*API Interface*: The system will provide a RESTful API that allows external systems to interact with its functionality programmatically. This API will support operations for managing fragments, retrieving match suggestions, and accessing user session data. The API will be secured using authentication and authorization mechanisms to ensure that only authorized systems can access it.
+
+*Fragment Upload Interface*: The system will provide an interface for uploading text fragments, supporting various image formats and batch uploads. This interface will include validation mechanisms to ensure that uploaded files meet the required specifications.
+
+*Segmentation Tool Interface*: The system will provide an interface for integrating with the external segmentation tool. This interface will allow users to segment fragments effectively, facilitating the combination of smaller fragments into larger texts.
+
