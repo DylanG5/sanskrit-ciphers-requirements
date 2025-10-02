@@ -5,4 +5,34 @@ ifdef::env-draft[]
 TIP: _Classification of the behaviors, interfaces and scenarios (<<s2>>, <<s3>> and <<s4>>) by their degree of criticality. It is useful in particular if during the course of the project various pressures force the team to drop certain functions._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Critical (Must-Have)
+* Secure login and authentication (S.4.1) 
+** required for system access and user management.
+* Fragment upload, orientation, and normalization (S.4.2) 
+** enables the core workflow of preparing digitized manuscripts.
+* Fragment matching and reconstruction (S.4.3) 
+** essential for achieving the project’s scholarly goals.
+* Script identification (S.4.4) 
+** foundational to understanding and categorizing fragments.
+* Database search and exploration (S.4.6) 
+** critical for enabling scholars to retrieve and compare fragments efficiently.
+
+==== Important (Should-Have)
+* Transcription assistance (S.4.5) 
+** significantly enhances usability and research speed, but manual transcription remains possible if OCR fails.
+* Match sensitivity tuning and side-by-side comparison (alternate flow of S.4.3) 
+** improves researcher control and reliability of results.
+* Manual overrides for classification and orientation 
+** ensures system flexibility where automation falls short.
+* Exporting search results and transcriptions 
+** supports collaboration and documentation.
+
+==== Optional (Nice-to-Have)
+* Session management (save, load, version history) 
+** valuable for long-term projects but not mandatory for demonstrating proof-of-concept.
+* Annotation features on fragments  
+** enhances usability but not required for minimal viable system.
+* Integration with external segmentation tools 
+** useful for advanced workflows but not critical for initial delivery.
+* Read-only sharing links 
+** convenient for collaboration but not essential for project success.
