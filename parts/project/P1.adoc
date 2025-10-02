@@ -5,4 +5,24 @@ ifdef::env-draft[]
 TIP: _Main responsibilities in the project; required project staff and their needed qualifications. It defines the roles (as a human responsibility) involved in the project._  <<BM22>>
 endif::[]
 
-{emptysec}
+*Team:*
+
+- Five software engineering students from McMaster University.
+
+- Rotating biweekly roles: Leader, Organizer, Meeting Chair, Note Taker, Reviewer.
+
+- 10 hours per week per member.
+
+*External Personnel:*
+
+- Dr. Shayne Clarke (domain expert, biweekly consultations).
+
+- Course instructor and teaching assistants.
+
+*Constraints:*
+
+- All personnel are full-time students with concurrent academic obligations.
+
+- The team’s limited expertise in Sanskrit text and Buddhist manuscripts.
+
+- Limited time for completing the project.

@@ -5,4 +5,227 @@ ifdef::env-draft[]
 TIP: _**This is the core of the Project book**. It details the individual tasks listed under <<p3>> and their expected outcomes. It define the project's main activities and the results they must produce, associated with the milestone dates defined in <<p3>>._  <<BM22>>
 endif::[]
 
-{emptysec}
+==== Team Formation and Project Selection
+
+*Tasks:*
+
+- Form team of five members
+
+- Select project from available options
+
+- Establish initial contact with domain expert
+
+*Deliverables:*
+
+- Form the team.
+
+- Confirm selected project
+
+
+==== Problem Statement, POC Plan, Development Plan
+
+*Tasks:*
+
+- Define project scope and objectives
+
+- Identify technical risks and mitigation strategies
+
+- Establish development workflow and standards
+
+- Create POC demonstration plan
+
+*Deliverables:*
+
+- Problem statement document
+
+- POC plan document
+
+- Development plan document (this document)
+
+
+==== Requirements Documentation and Hazard Analysis Revision 0
+
+*Tasks:*
+
+- Define functional and non-functional requirements
+
+- Identify potential hazards and safety concerns
+
+- Document system constraints
+
+*Deliverables:*
+
+- Requirements specification document
+
+- Hazard analysis document
+
+
+==== Verification & Validation Plan Revision 0
+
+*Tasks:*
+
+- Define testing strategy and acceptance criteria
+
+- Establish verification methods for requirements
+
+- Plan usability testing approach
+
+*Deliverables:*
+
+- V&V plan document
+
+
+==== Design Document Revision -1
+
+*Tasks:*
+
+- Create preliminary system architecture
+
+- Define component interfaces
+
+- Plan database schema
+
+*Deliverables:*
+
+- Initial design document
+
+
+==== Proof of Concept Demonstration
+
+*Tasks:*
+
+- Implement OCR text extraction from manuscript fragments
+
+- Develop image normalization pipeline (rotation correction, standardization)
+
+- Create feature extraction for edges, text content, and damage patterns
+
+- Implement similarity algorithms with confidence scores
+
+- Build basic web interface for fragment upload and viewing results
+
+*Deliverables:*
+
+- Functional POC demonstrating:
+
+  * 60% OCR text extraction accuracy
+
+  * 95% orientation correction success
+
+  * Feature extraction of edge patterns, damage signatures, and text regions
+
+  * Consistent similarity rankings
+
+- POC demonstration presentation
+
+
+==== Design Document Revision 0
+
+*Tasks:*
+
+- Refine architecture based on POC learnings
+
+- Complete detailed component specifications
+
+- Document API contracts
+
+*Deliverables:*
+
+- Complete design document
+
+
+==== Revision 0 Demonstration
+
+*Tasks:*
+
+- Implement complete frontend (multi-fragment canvas, match discovery, save/load, search/filter, export)
+
+- Build full backend (database operations, model orchestration, async processing, caching)
+
+- Deploy all five AI models (70% OCR accuracy, 70% top-5 match precision)
+
+- Achieve 80% test coverage for frontend and backend
+
+- Conduct usability testing with domain expert
+
+*Deliverables:*
+
+- Fully integrated system
+
+- Revision 0 demonstration presentation
+
+
+==== V&V Report and Extras Revision 0
+
+*Tasks:*
+
+- Execute test plans
+
+- Document test results and coverage metrics
+
+- Report usability findings
+
+*Deliverables:*
+
+- V&V report
+
+- Test coverage reports
+
+
+==== Final Demonstration (Revision 1)
+
+*Tasks:*
+
+- Address issues identified in Revision 0
+
+- Optimize system performance
+
+- Enhance error handling and user feedback
+
+*Deliverables:*
+
+- Production-ready system
+
+- Final demonstration presentation
+
+
+==== EXPO Demonstration
+
+*Tasks:*
+
+- Prepare public-facing demonstration materials
+
+- Create poster and presentation materials
+
+*Deliverables:*
+
+- EXPO poster
+
+- EXPO demonstration
+
+
+==== Final Documentation (Revision 1)
+
+*Tasks:*
+
+- Finalize all technical documentation
+
+- Complete user manual
+
+- Generate final API documentation
+
+- Compile source code repository
+
+*Deliverables:*
+
+- Final requirements document
+
+- Final design document
+
+- Final V&V report
+
+- User manual
+
+- Technical documentation
+
+- Source code repository with README
