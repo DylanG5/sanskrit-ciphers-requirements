@@ -13,10 +13,9 @@ The textual history of Indian Buddhism is fragmented across thousands of manuscr
 * Create tools to automatically regularize image orientation, detect edges and shapes, identify palaeographic scripts, and perform OCR transcription tuned for ancient Sanskrit manuscripts.
 * Provide a searchable, structured database that enables scholars to track, organize, and connect fragments across collections.
 
-.Given the complexity of the project, the work will be divided into subprojects, each addressing a distinct but interdependent stage of the scholarly workflow:
-* Image Preprocessing – cutting out fragments, normalizing orientation, and cleaning input images.
-* Fragment Analysis and Matching – detecting edges, shapes, and damage patterns to suggest probable fragment matches.
-* OCR Transcription – classifying scripts (initially Sanskrit, extendable to Tibetan and Chinese) and transcribing visible text.
-* Database Development – designing a searchable and sortable metadata repository for fragment storage, retrieval, and comparison.
+.Given the complexity of the project, the work will be divided into clusters, each addressing a distinct but interdependent stage of the scholarly workflow (More information on this in section <<S.1>>):
+* Front-end Cluster — Scholar-facing web app for secure login, batch uploads, an interactive canvas to arrange fragments, view AI matches, and save sessions.
+* Backend Cluster — Core services (API gateway, authentication, preprocessing orchestration, database access) that power and persist all workflows.
+* AI/ML Cluster — Model services for edge/damage matching, script/handwriting classification, OCR text extraction, and content similarity scoring.
 
-Together, these subprojects form an integrated system that not only assists in reconstructing ancient manuscripts but also builds a model for applying computational puzzle-solving approaches to the humanities at large.
+Together, these clusters form an integrated system that not only assists in reconstructing ancient manuscripts but also builds a model for applying computational puzzle-solving approaches to the humanities at large.
