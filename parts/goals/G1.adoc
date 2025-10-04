@@ -13,7 +13,7 @@ The textual history of Indian Buddhism is fragmented across thousands of manuscr
 * Create tools to automatically regularize image orientation, detect edges and shapes, identify palaeographic scripts, and perform OCR transcription tuned for ancient Sanskrit manuscripts.
 * Provide a searchable, structured database that enables scholars to track, organize, and connect fragments across collections.
 
-.Given the complexity of the project, the work will be divided into clusters, each addressing a distinct but interdependent stage of the scholarly workflow (More information on this in section [S.1](#S.1)):
+.Given the complexity of the project, the work will be divided into clusters, each addressing a distinct but interdependent stage of the scholarly workflow (More information on this in section xref:s1[(S.1) Components]):
 * Front-end Cluster — Scholar-facing web app for secure login, batch uploads, an interactive canvas to arrange fragments, view AI matches, and save sessions.
 * Backend Cluster — Core services (API gateway, authentication, preprocessing orchestration, database access) that power and persist all workflows.
 * AI/ML Cluster — Model services for edge/damage matching, script/handwriting classification, OCR text extraction, and content similarity scoring.
