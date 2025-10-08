@@ -25,8 +25,10 @@ endif::[]
 |===
 
 
-.====Direct Stakeholders
-=====Scholars Studying Buddhist Text
+==== (G.7.1)Direct Stakeholders
+
+===== Scholars Studying Buddhist Text
+
 Scholars that are working on the reconstruction of Buddhist texts will be directly interacting with the web application we plan on building. They will be using the web application to match fragments together based on many factors such as transcription, shape matching and other criteria they decide to choose. Scholars will be using the main functionality of this web application and therefore are direct stakeholders.
 
 **Shayne (Scholar in Buddhist Text Fragmentation)**
@@ -36,7 +38,8 @@ Shayne is a professor in Religious Studies at McMaster University specializing i
 Arun is a senior professor and series editor who balances teaching, and frequent research travel. His work focuses on reconstructing dispersed Sanskrit folios and checking them against Tibetan and Chinese parallels to establish reliable readings. Progress with this reconstruction is slow due to time-consuming manual checks such as dating scripts, aligning shapes of fragments, and looking for possible joins across multiple archives. He needs a way to speed this process up as he feels this takes too much of his time.
 
 
-=====Graduate Students and Research Assistants (RAs):
+===== Graduate Students and Research Assistants (RAs):
+
 Graduate students and RAs support the reconstruction work of scholars by looking though large batches of fragments and trying to figure out if they can find matches or not. Sometimes they are given a certain task from the scholars to help them learn certain skills that will help them with future work in reconstruction. They will also be using the main functionality of this web application and therefore are direct stakeholders.
 
 **Stacey (Graduate Student in Buddhist Studies)**
@@ -46,18 +49,23 @@ Stacey is a second year masters student juggling school work as well as learning
 Pema is a RA who also helps scholars and professors with their work with reconstruction of Buddhist texts. He enjoys sports such as basketball and hockey but is often finding it hard to find time to do either given that he spends too much time trying to find matching pieces of fragments to help his supervising professor. He would like something that could help him with the time commitment of his research to spend some time on the hobbies he enjoys.
 
 
-====(G.7.2) Indirect Stakeholders
+==== (G.7.2) Indirect Stakeholders
+
 **Other scholars working on different manuscript reconstructions (specifically ones not in Sanskrit):** While they benefit from the shape matchmaking functionality of the system the system was not built to support other languages that aren’t Sanskrit. But they could definitely use the functionalities that don’t require Sanskrit.
 **Collection staff looking to store fragments online:** If some researchers out there want a place to store their manuscript fragments online somewhere safe they could also do it using this web application. Though this is not the intended use of the system it is definitely a way in which someone can use the system
 **Digital humanities researchers studying textual transmission:** If given access to a scholars workspace they can look into the formed manuscripts and that could help them with their research in textual transmission.
 
-====(G.7.3) Requirements sources
-**Personal Information Protection and Electronic Documents Act (PIPEDA):** If the system collects or uses personal information (e.g., user accounts, contact details, usage logs), it must comply with PIPEDA: obtain consent, limit use to stated purposes, safeguard data, enable access/correction, and follow breach-notification rules.
-* https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/
+==== (G.7.3) Requirements sources
 
-**Web Accessibility:** Validate the UI against WCAG 2.2 Level AA and Ontario’s AODA (IASR) web accessibility requirements to ensure inclusive access (keyboard navigation, contrast, alt text, captions).
-* https://www.w3.org/TR/wcag/
-* https://www.ontario.ca/laws/regulation/110191
+* **Personal Information Protection and Electronic Documents Act (PIPEDA)** - If the system collects or uses personal information (e.g., user accounts, contact details, usage logs), it must comply with PIPEDA: obtain consent, limit use to stated purposes, safeguard data, enable access/correction, and follow breach-notification rules.
++
+- https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/
 
-**Protection of Restricted/Private Images (Data Security & Access Control):** Restricted or unpublished manuscript images must be protected via role-based access, least-privilege permissions, encryption in transit and at rest.
-* https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
+* **Web Accessibility** - Validate the UI against WCAG 2.2 Level AA and Ontario’s AODA (IASR) web accessibility requirements to ensure inclusive access (keyboard navigation, contrast, alt text, captions).
++
+- https://www.w3.org/TR/wcag/
+- https://www.ontario.ca/laws/regulation/110191
+
+* **Protection of Restricted/Private Images (Data Security & Access Control)** - Restricted or unpublished manuscript images must be protected via role-based access, least-privilege permissions, encryption in transit and at rest.
++
+- https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
