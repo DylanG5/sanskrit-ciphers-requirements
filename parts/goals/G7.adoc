@@ -4,17 +4,60 @@
 ifdef::env-draft[]
 TIP: _Groups of people who can affect the project or be affected by it, and other places to consider for information about the project and system. It lists stakeholders and other requirements sources. It should define stakeholders as categories of people, not individuals, even if such individuals are known at the time of writing. The main goal of chapter <<g7>> is to avoid forgetting any category of people whose input is relevant to the project. It also lists documents and other information that the project, aside from soliciting input from stakeholders, can consult for requirements information._  <<BM22>>
 endif::[]
-.Primary stakeholders (target side)
-* Scholars of Buddhist textual history (religious studies, philology, palaeography)
-* Supervisors and domain experts (project supervisor, capstone professor)
-* Collections staff (archivists, curators, cataloguers)
 
-.Secondary stakeholders
-* Computer science researchers (AI, computer vision, OCR/HTR)
-* Digital humanities researchers studying textual transmission/manuscript culture
-* Teaching & outreach roles (instructors integrating the tool into coursework)
+.Table — Stakeholder categories
+|===
+| Stakeholder | Persona | Category
 
-.End users
-* Academic researchers assembling and studying fragments
-* Graduate/undergraduate research assistants needing computational support
-* Library/archives staff performing identification and metadata enhancement
+.2+| Scholars studying Buddhist texts
+| Scholar in Buddhist Text Fragmentation (Shayne)
+.2+| Direct
+| Textual Critic of Sanskrit Buddhist Literature (Arun)
+
+.2+| Graduate students & research assistants (RAs)
+| Graduate Student in Buddhist Studies (Stacey)
+.2+| Direct
+| Graduate Research Assistant in Manuscript Studies (Pema)
+
+| Other scholars working on different manuscript reconstructions (non-Sanskrit) | — | Indirect
+| Collection staff looking to store fragments online | — | Indirect
+| Digital humanities researchers studying textual transmission | — | Indirect
+|===
+
+
+.====Direct Stakeholders
+=====Scholars Studying Buddhist Text
+Scholars that are working on the reconstruction of Buddhist texts will be directly interacting with the web application we plan on building. They will be using the web application to match fragments together based on many factors such as transcription, shape matching and other criteria they decide to choose. Scholars will be using the main functionality of this web application and therefore are direct stakeholders.
+
+**Shayne (Scholar in Buddhist Text Fragmentation)**
+Shayne is a professor in Religious Studies at McMaster University specializing in Indian Buddhist manuscripts. He is quite busy as he splits his time between teaching and supervising graduate students and when he can he reconstructs folios from digitized fragments sourced across multiple archives. The process of reconstruction is quite slow and takes Shayne way too much time. He is looking for something that would help him cut down the time of this process to help him with his progress on his reconstruction.
+
+**Arun (Textual Critic of Sanskrit Buddhist Literature)**
+Arun is a senior professor and series editor who balances teaching, and frequent research travel. His work focuses on reconstructing dispersed Sanskrit folios and checking them against Tibetan and Chinese parallels to establish reliable readings. Progress with this reconstruction is slow due to time-consuming manual checks such as dating scripts, aligning shapes of fragments, and looking for possible joins across multiple archives. He needs a way to speed this process up as he feels this takes too much of his time.
+
+
+=====Graduate Students and Research Assistants (RAs):
+Graduate students and RAs support the reconstruction work of scholars by looking though large batches of fragments and trying to figure out if they can find matches or not. Sometimes they are given a certain task from the scholars to help them learn certain skills that will help them with future work in reconstruction. They will also be using the main functionality of this web application and therefore are direct stakeholders.
+
+**Stacey (Graduate Student in Buddhist Studies)**
+Stacey is a second year masters student juggling school work as well as learning from her surprising professor on how to tackle problems like the reconstruction of Buddhist text. She is still learning Sanskrit and is sometimes having trouble with figuring out which characters are which. She is also having a hard time learning Sanskrit overall and wants something that can help her with the character recognition and learning Sanskrit.
+
+**Pema (Graduate Research Assistant in Manuscript Studies)**
+Pema is a RA who also helps scholars and professors with their work with reconstruction of Buddhist texts. He enjoys sports such as basketball and hockey but is often finding it hard to find time to do either given that he spends too much time trying to find matching pieces of fragments to help his supervising professor. He would like something that could help him with the time commitment of his research to spend some time on the hobbies he enjoys.
+
+
+====(G.7.2) Indirect Stakeholders
+**Other scholars working on different manuscript reconstructions (specifically ones not in Sanskrit):** While they benefit from the shape matchmaking functionality of the system the system was not built to support other languages that aren’t Sanskrit. But they could definitely use the functionalities that don’t require Sanskrit.
+**Collection staff looking to store fragments online:** If some researchers out there want a place to store their manuscript fragments online somewhere safe they could also do it using this web application. Though this is not the intended use of the system it is definitely a way in which someone can use the system
+**Digital humanities researchers studying textual transmission:** If given access to a scholars workspace they can look into the formed manuscripts and that could help them with their research in textual transmission.
+
+====(G.7.3) Requirements sources
+**Personal Information Protection and Electronic Documents Act (PIPEDA):** If the system collects or uses personal information (e.g., user accounts, contact details, usage logs), it must comply with PIPEDA: obtain consent, limit use to stated purposes, safeguard data, enable access/correction, and follow breach-notification rules.
+* https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/
+
+**Web Accessibility:** Validate the UI against WCAG 2.2 Level AA and Ontario’s AODA (IASR) web accessibility requirements to ensure inclusive access (keyboard navigation, contrast, alt text, captions).
+* https://www.w3.org/TR/wcag/
+* https://www.ontario.ca/laws/regulation/110191
+
+**Protection of Restricted/Private Images (Data Security & Access Control):** Restricted or unpublished manuscript images must be protected via role-based access, least-privilege permissions, encryption in transit and at rest.
+* https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
