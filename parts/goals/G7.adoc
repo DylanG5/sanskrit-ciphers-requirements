@@ -27,7 +27,7 @@ endif::[]
 
 ==== (G.7.1)Direct Stakeholders
 
-===== Scholars Studying Buddhist Text
+==== Scholars Studying Buddhist Text
 
 Scholars that are working on the reconstruction of Buddhist texts will be directly interacting with the web application we plan on building. They will be using the web application to match fragments together based on many factors such as transcription, shape matching and other criteria they decide to choose. Scholars will be using the main functionality of this web application and therefore are direct stakeholders.
 
@@ -38,7 +38,7 @@ Shayne is a professor in Religious Studies at McMaster University specializing i
 Arun is a senior professor and series editor who balances teaching, and frequent research travel. His work focuses on reconstructing dispersed Sanskrit folios and checking them against Tibetan and Chinese parallels to establish reliable readings. Progress with this reconstruction is slow due to time-consuming manual checks such as dating scripts, aligning shapes of fragments, and looking for possible joins across multiple archives. He needs a way to speed this process up as he feels this takes too much of his time.
 
 
-===== Graduate Students and Research Assistants (RAs):
+==== Graduate Students and Research Assistants (RAs):
 
 Graduate students and RAs support the reconstruction work of scholars by looking though large batches of fragments and trying to figure out if they can find matches or not. Sometimes they are given a certain task from the scholars to help them learn certain skills that will help them with future work in reconstruction. They will also be using the main functionality of this web application and therefore are direct stakeholders.
 
@@ -51,9 +51,9 @@ Pema is a RA who also helps scholars and professors with their work with reconst
 
 ==== (G.7.2) Indirect Stakeholders
 
-**Other scholars working on different manuscript reconstructions (specifically ones not in Sanskrit):** While they benefit from the shape matchmaking functionality of the system the system was not built to support other languages that aren’t Sanskrit. But they could definitely use the functionalities that don’t require Sanskrit.
-**Collection staff looking to store fragments online:** If some researchers out there want a place to store their manuscript fragments online somewhere safe they could also do it using this web application. Though this is not the intended use of the system it is definitely a way in which someone can use the system
-**Digital humanities researchers studying textual transmission:** If given access to a scholars workspace they can look into the formed manuscripts and that could help them with their research in textual transmission.
+* **Other scholars working on different manuscript reconstructions (specifically ones not in Sanskrit):** While they benefit from the shape matchmaking functionality of the system the system was not built to support other languages that aren’t Sanskrit. But they could definitely use the functionalities that don’t require Sanskrit.
+* **Collection staff looking to store fragments online:** If some researchers out there want a place to store their manuscript fragments online somewhere safe they could also do it using this web application. Though this is not the intended use of the system it is definitely a way in which someone can use the system
+* **Digital humanities researchers studying textual transmission:** If given access to a scholars workspace they can look into the formed manuscripts and that could help them with their research in textual transmission.
 
 ==== (G.7.3) Requirements sources
 
