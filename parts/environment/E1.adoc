@@ -5,5 +5,12 @@ ifdef::env-draft[]
 TIP: _Clear and precise definitions of all the vocabulary specific to the application domain, including technical terms, words from ordinary language used in a special meaning, and acronyms. It introduces the terminology of the project; not just of the environment in the strict sense, but of all its parts._  <<BM22>>
 endif::[]
 
+**AI (Artificial Intelligence)**:: The simulation of human intelligence processes by computer systems, including learning, reasoning, and problem-solving capabilities.
 
-{emptysec}
+**Codicological**:: Relating to codicology, the study of books as physical objects, especially manuscripts. This includes the analysis of materials, construction, decoration, and other physical aspects of manuscripts such as folio numbers, text row counts, and structural features.
+
+**Fragment**:: A piece or portion of an ancient manuscript that has been separated from the original complete text through damage, deterioration, or other processes over time.
+
+**Palaeography**:: The study of ancient and historical handwriting, including the deciphering, analysis, and dating of historical manuscripts based on writing style, script characteristics, and other textual features.
+
+**Reconstruction**:: The process of piecing together manuscript fragments to restore or approximate the original arrangement and content of ancient texts.
