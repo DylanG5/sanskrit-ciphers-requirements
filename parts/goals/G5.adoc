@@ -8,7 +8,10 @@ endif::[]
 .High Level use cases diagram
 image::models/G5_capstone.png[scale=70%,align=center]
 
-.System Overview
+====
+
+==== System Overview
+
 The system will support scholars of Buddhist textual history by providing tools that automate and accelerate the process of reconstructing fragmented manuscripts. The following main usage scenarios capture the essential ways in which users will interact with the system:
 
 ==== Fragment Orientation and Preparation
