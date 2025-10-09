@@ -6,16 +6,9 @@ TIP: _Fundamental usage paths through the system. It presents the main scenarios
 endif::[]
 
 .High Level use cases diagram
-// HTML: center + width; PDF: center + pdfwidth
-ifdef::backend-html5[]
-[.text-center]
-image::models/G5_capstone.png[width=55%]
-endif::[]
-ifdef::backend-pdf[]
-image::models/G5_capstone.png[pdfwidth=55%,align=center]
-endif::[]
+image::models/G5_capstone.png[scale=70%,align=center]
 
-
+.System Overview
 The system will support scholars of Buddhist textual history by providing tools that automate and accelerate the process of reconstructing fragmented manuscripts. The following main usage scenarios capture the essential ways in which users will interact with the system:
 
 ==== Fragment Orientation and Preparation
