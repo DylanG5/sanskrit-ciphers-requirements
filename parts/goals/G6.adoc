@@ -23,7 +23,7 @@ To clearly delimit the project scope, the following activities are explicitly ex
 
 * The system will not engage in physical preservation, repair, or handling of manuscripts. It applies only to digital images of fragments.
 
-Non-Standard Inputs
+==== Non-Standard Inputs
 
 * The system will not accept non-image inputs (e.g., handwritten notes, modern typed transcriptions) for automated processing. Only digitized images of fragments will be handled.
 
