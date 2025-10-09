@@ -16,7 +16,7 @@ The textual history of Indian Buddhism is fragmented across thousands of manuscr
 
 .Given the complexity of the project, the work will be divided into clusters, each addressing a distinct but interdependent stage of the scholarly workflow (More information on this in section xref:s1[(S.1) Components]):
 * **Front-end Cluster** — Scholar-facing web app for secure login, batch uploads, an interactive canvas to arrange fragments, view AI matches, and save sessions.
-* **Backend Cluster** — Core services (API gateway, authentication, preprocessing orchestration, database access) that power and persist all workflows.
+* **Backend Cluster** — Core services (Application Programming Interface (API) gateway, authentication, preprocessing orchestration, database access) that power and persist all workflows.
 * **AI/Machine Learning (ML) Cluster** — Model services for edge/damage matching, script/handwriting classification, OCR text extraction, and content similarity scoring.
 
 Together, these clusters form an integrated system that not only assists in reconstructing ancient manuscripts but also builds a model for applying computational puzzle-solving approaches to the humanities at large.
