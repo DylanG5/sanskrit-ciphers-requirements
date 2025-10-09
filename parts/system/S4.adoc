@@ -26,18 +26,18 @@ endif::[]
 [#s4-2,reftext=S.4.2]
 ==== (S.4.2) Fragment Orientation and Preparation
 
-.Normal flow
+**Normal flow**
 * The scholar uploads one or more digitized manuscript images (JPG, PNG, TIFF).
 * The scholar clicks "Normalize Images."
 * The system cleans the images (crop, remove background noise, standardize resolution).
 * The system regularizes fragment orientation (align text horizontally ±5°).
 * The system notifies the scholar that the images are ready.
 
-.Alternate flow
+**Alternate flow**
 * If metadata (e.g., EXIF orientation tags) is available, the system uses it to assist orientation.
 * The scholar may manually adjust orientation if the automated correction is unsatisfactory.
 
-.Error flow
+**Error flow**
 * If a file type is unsupported, the system rejects it and displays: "Unsupported format. Please upload JPG, PNG, or TIFF."
 * If an image upload fails due to size limits, the system prompts: "File exceeds maximum size of 50 MB."
 
@@ -45,18 +45,18 @@ endif::[]
 [#s4-3,reftext=S.4.3]
 ==== (S.4.3) Fragment Matching and Reconstruction
 
-.Normal flow
+**Normal flow**
 * The scholar selects a fragment.
 * The scholar requests "Find Matches."
 * The system analyzes edges, shapes, and damage patterns.
 * The system generates a ranked list of probable matches (with similarity scores).
 * The scholar inspects the matches and accepts or rejects each suggestion.
 
-.Alternate flow
+**Alternate flow**
 * The scholar may adjust sensitivity thresholds (e.g., only show matches above 0.8 probability).
 * The scholar may compare two fragments side by side.
 
-.Error flow
+**Error flow**
 * If no probable matches are found, the system displays: "No strong matches detected. Try lowering the match threshold."
 * If processing fails due to corrupted images, the system flags them and skips analysis.
 
@@ -64,34 +64,34 @@ endif::[]
 [#s4-4,reftext=S.4.4]
 ==== (S.4.4) Script Identification
 
-.Normal flow
+**Normal flow**
 * The scholar views a fragment.
 * The system analyzes visible text features.
 * The system classifies the fragment’s script (e.g., Gupta Brahmi, Tibetan Uchen, Chinese).
 * The classification result and confidence score are displayed.
 
-.Alternate flow
+**Alternate flow**
 * The scholar may override the system’s classification with a manual label.
 
-.Error flow
+**Error flow**
 * If the system cannot classify with ≥50% confidence, it displays: "Script could not be determined. Manual input required."
 
 
 [#s4-5,reftext=S.4.5]
 ==== (S.4.5) Transcription Assistance
 
-.Normal flow
+**Normal flow**
 * The scholar opens a fragment.
 * The scholar requests transcription.
 * The system applies OCR tuned for ancient manuscripts.
 * The transcription is displayed alongside the fragment image.
 * The scholar edits and annotates the transcription.
 
-.Alternate flow
+**Alternate flow**
 * The scholar may export the transcription as text or XML.
 * The scholar may request partial transcription (e.g., line by line).
 
-.Error flow
+**Error flow**
 * If OCR confidence is <70%, the system highlights uncertain characters in red.
 * If OCR fails entirely, the system prompts: "Unable to transcribe. Please attempt manual transcription."
 
@@ -99,16 +99,16 @@ endif::[]
 [#s4-6,reftext=S.4.6]
 ==== (S.4.6) Database Search and Exploration
 
-.Normal flow
+**Normal flow**
 * The scholar opens the database search interface.
 * The scholar enters a query (e.g., "Gupta script, 5+ lines").
 * The system retrieves and displays relevant fragments.
 * The scholar sorts, filters, and links fragments as needed.
 
-.Alternate flow
+**Alternate flow**
 * The scholar may export results to CSV or PDF.
 * The scholar may save queries for future use.
 
-.Error flow
+**Error flow**
 * If the query is invalid, the system prompts: "Invalid search format. Please correct your query."
 * If no results match, the system displays: "No fragments found matching your criteria."
