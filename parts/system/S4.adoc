@@ -6,7 +6,10 @@ TIP: _Examples of interaction between the environment (or human users) and the s
 endif::[]
 
 [#s4-1,reftext=S.4.1]
-==== (S.4.1) Login
+
+In this section we take the use cases from section G.5 and give a detailed flow to them here.
+
+=== (S.4.1) Login
 
 **Normal flow**
 
@@ -27,7 +30,7 @@ endif::[]
 
 
 [#s4-2,reftext=S.4.2]
-==== (S.4.2) Fragment Orientation and Preparation
+=== (S.4.2) Fragment Orientation and Preparation
 
 **Normal flow**
 
@@ -49,7 +52,7 @@ endif::[]
 
 
 [#s4-3,reftext=S.4.3]
-==== (S.4.3) Fragment Matching and Reconstruction
+=== (S.4.3) Fragment Matching and Reconstruction
 
 **Normal flow**
 
@@ -71,7 +74,7 @@ endif::[]
 
 
 [#s4-4,reftext=S.4.4]
-==== (S.4.4) Script Identification
+=== (S.4.4) Script Identification
 
 **Normal flow**
 
@@ -90,7 +93,7 @@ endif::[]
 
 
 [#s4-5,reftext=S.4.5]
-==== (S.4.5) Transcription Assistance
+=== (S.4.5) Transcription Assistance
 
 **Normal flow**
 
@@ -112,7 +115,7 @@ endif::[]
 
 
 [#s4-6,reftext=S.4.6]
-==== (S.4.6) Database Search and Exploration
+=== (S.4.6) Database Search and Exploration
 
 **Normal flow**
 
