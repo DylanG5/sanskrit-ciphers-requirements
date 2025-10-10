@@ -9,7 +9,7 @@ endif::[]
 
 The Sanskrit Manuscript Fragment Reconstruction Platform provides a web-based interface for Buddhist Studies scholars to systematically search, filter, and reconstruct ancient texts from the British Library's collection of 21,000 manuscript fragments. The system operates through three primary functional domains:
 
-===== 1. Fragment Preprocessing and Analysis
+==== 1. Fragment Preprocessing and Analysis
 
 *Image Processing Pipeline*
 * Automatically segment uploaded fragment images to isolate manuscript content from background
@@ -23,7 +23,7 @@ The Sanskrit Manuscript Fragment Reconstruction Platform provides a web-based in
 * Generate searchable metadata attributes for filtering and discovery
 * Process both British Library collection and user-submitted images through the same pipeline
 
-===== 2. Criteria-Based Search and Filtering System
+==== 2. Criteria-Based Search and Filtering System
 
 *Multi-Criteria Filtering Interface*
 * Allow researchers to enter specific fragment IDs for targeted searches
@@ -37,7 +37,7 @@ The Sanskrit Manuscript Fragment Reconstruction Platform provides a web-based in
 * Generate ranked lists of potential matches based on physical compatibility
 * Support both automated matching suggestions and manual criteria specification
 
-===== 3. Interactive Reconstruction Workspace
+==== 3. Interactive Reconstruction Workspace
 
 *Canvas-Based Assembly Interface*
 * Provide drag-and-drop canvas for virtually arranging and testing fragment combinations

@@ -9,7 +9,7 @@ endif::[]
 
 The Sanskrit Manuscript Fragment Reconstruction Platform will have measurable effects on Buddhist scripture research and the intersection of modern technology with humanities academia.
 
-===== 1. Buddhist Studies Research Environment
+==== 1. Buddhist Studies Research Environment
 
 *Buddhist Scripture Reconstruction*: Acceleration of text discovery and reconstruction timelines, enabling scholars to reassemble ancient Buddhist texts that have been fragmented for centuries. The systematic processing capabilities allow meaningful progress through the British Library's 21,000 fragments and similar collections worldwide.
 
@@ -17,7 +17,7 @@ The Sanskrit Manuscript Fragment Reconstruction Platform will have measurable ef
 
 *Publication and Knowledge Recovery*: Increased volume of Buddhist manuscript reconstruction research publications due to accelerated discovery processes, potentially recovering lost Buddhist wisdom and bridging historical gaps in Buddhist literary tradition through systematic reconstruction.
 
-===== 2. Technology-Humanities Academic Integration
+==== 2. Technology-Humanities Academic Integration
 
 *Digital Humanities Evolution*: Buddhist Studies becomes a pioneering example of successful AI integration in humanities research, demonstrating how computational methods can augment rather than replace traditional scholarly expertise. This establishes new paradigms for technology adoption in humanities disciplines.
 

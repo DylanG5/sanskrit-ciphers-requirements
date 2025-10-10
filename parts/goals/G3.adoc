@@ -6,21 +6,21 @@ TIP: _New processes, or improvement to existing processes, made possible by the 
 endif::[]
 
 ==== Overview
-The AI-powered manuscript fragment reconstruction platform for Buddhist Studies scholars addresses a challenge in digital humanities by transforming an overwhelming manual process into a scalable, collaborative, AI-enhanced workflow.
+The Artificial Intelligence (AI)-powered manuscript fragment reconstruction platform for Buddhist Studies scholars addresses a challenge in digital humanities by transforming an overwhelming manual process into a scalable, collaborative, AI-enhanced workflow.
 
 ==== Primary Business Benefits
 
-===== 1. Dramatic Scale Increase in Reconstruction Capability
+==== 1. Dramatic Scale Increase in Reconstruction Capability
 * **Current limitation**: Manual reconstruction is extremely time-consuming and tedious
 * **Expected benefit**: AI-assisted matching will enable processing of hundreds to thousands of fragments systematically
 * **Impact**: Unlocks the potential to meaningfully progress through the 21,000+ fragments possessed by the british library as well as other institutions
 
-===== 2. Acceleration of Scholarly Research
+==== 2. Acceleration of Scholarly Research
 * **Time savings**: Reduce fragment matching from hours/days per potential match to minutes through AI-powered suggestions
 * **Quality improvement**: Multiple AI-generated hypotheses allow scholars to evaluate more possibilities than humanly feasible
 * **Research velocity**: Enable completion of reconstruction projects within significantly shorter timelines
 
-===== 3. Methodological Innovation in Digital Humanities
+==== 3. Methodological Innovation in Digital Humanities
 * **Technical advancement**: Pioneer AI applications for irregular archaeological artifact reconstruction
 * **Reproducible research**: Establish systematic methodologies for similar reconstruction challenges in other domains
 * **Research infrastructure**: Create reusable computational tools for manuscript studies globally

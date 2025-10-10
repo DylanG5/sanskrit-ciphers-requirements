@@ -9,7 +9,7 @@ endif::[]
 
 This section specifies conditions under which the Sanskrit Manuscript Fragment Reconstruction Platform will be deemed satisfactory for academic research use. The V&V framework focuses on core functionality while recognizing the platform serves as a non-critical AI assistance tool for scholarly research.
 
-===== 1. Functional Verification Criteria
+==== 1. Functional Verification Criteria
 
 *Fragment Processing Pipeline*
 
@@ -23,7 +23,7 @@ This section specifies conditions under which the Sanskrit Manuscript Fragment R
 
 * **Canvas Workspace Functionality**: Drag-and-drop interface operates smoothly with session save/restore capability. Success threshold: Responsive manipulation (≤200ms) with reliable session management.
 
-===== 2. Non-Functional Verification Criteria
+==== 2. Non-Functional Verification Criteria
 
 *System Performance*
 
@@ -37,7 +37,7 @@ This section specifies conditions under which the Sanskrit Manuscript Fragment R
 
 * **System Availability**: Platform maintains consistent availability for academic research. Success threshold: ≥95% uptime during operational hours.
 
-===== 3. Academic Research Acceptance Criteria
+==== 3. Academic Research Acceptance Criteria
 
 *Research Tool Validation*
 
@@ -45,7 +45,7 @@ This section specifies conditions under which the Sanskrit Manuscript Fragment R
 
 * **Data Integrity**: British Library collection data and user-submitted images are handled appropriately with preserved attribution. Success threshold: 100% preservation of original provenance and catalog information.
 
-===== 4. Testing and Validation Framework
+==== 4. Testing and Validation Framework
 
 *Testing Approach*: Unit testing for image processing, integration testing for search functionality, system testing for complete workflows, and user acceptance testing with Buddhist Studies researchers.
 
