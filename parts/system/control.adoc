@@ -6,8 +6,8 @@
 |Section | Version | Lead | Delivered | Reviewer | Approved 
 
 | **<<s1>>** | | | | |
-| **<<s2>>** | | | | |
-| **<<s3>>** | | | | |
+| **<<s2>>** | 1.0 | Aswin | October 10th, 2025 | |
+| **<<s3>>** | 1.0 | Aswin | October 10th, 2025 | |
 | **<<s4>>** | | | | |
 | **<<s5>>** | 1.0 | Umar | October 2nd, 2025 | |
 | **<<s6>>** | | | | |
