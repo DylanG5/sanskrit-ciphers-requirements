@@ -6,7 +6,9 @@ TIP: _How the system makes the functionality of <<s2>> available to the rest of 
 endif::[]
 
 
-The system will provide the following interfaces:
+==== Overview
+
+The system will provide several interfaces to facilitate interaction between users and the system's functionality, as well as integration with other systems.
 
 *User Interface*: The system will provide a web-based user interface that allows users to interact with the system's features. This interface will be accessible via modern web browsers and will be designed to be user-friendly and intuitive. It will include features for uploading, managing, and viewing text fragments, as well as tools for evaluating match suggestions and saving study sessions.
 

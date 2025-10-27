@@ -6,56 +6,56 @@ TIP: _**This is the bulk of the System book, describing elements of functionalit
 endif::[]
 
 
-S.2.1 Front End
+== S.2.1 Front End
 
-Functional Properties:
+=== Functional Properties:
 
 *User Authentication*: The system will provide a secure authentication mechanism to ensure that only authorized users can access the system. This will involve integrating with an existing authentication system that verifies user credentials.
 
 *Fragment Management*: The system will allow users to upload, store, retrieve, and organize text fragments. Users will be able to create collections of fragments and manage them through a user-friendly interface.
 
-*Display Fragments*: The system will provide a clear and organized display of text fragments, allowing users to easily view and navigate through their collections. It will support displaying multiple fragments simultaneously and provide tools for zooming, panning, and rotating images.
+*Display Fragments*: The system will display all of the text fragments in a clear and organized manner, allowing users to view and navigate through their collections easily. It will allow users to view multiple fragments in the same display and provide tools for zooming, panning, and rotating fragments.
 
-*Match Suggestions*: The system will offer match suggestions for text fragments based on various criteria, including edge patterns, damage patterns, and content similarity. Users will be able to view and evaluate these suggestions.
+*Match Suggestions*: The system will suggest matches for text fragments based on the edge patterns, damage patterns, and content. Users will be able to view these suggestions and determine their validity. The system will provide an approximate probability score for each match suggestion.
 
 *Session Management*: The system will allow users to save their current study sessions, including the arrangement of fragments, annotations, and any match evaluations they have made. Users will be able to load previous sessions to continue their work.
 
-Non-Functional Properties:
+=== Non-Functional Properties:
 
 *Usability*: The front-end interface will be designed to be intuitive and user-friendly, ensuring that users can easily navigate and utilize the system's features without extensive training.
 
 *Performance*: The front-end will be optimized for performance, ensuring that images load quickly and that user interactions are responsive, even when handling large collections of fragments.
 
-S.2.2 Back End
+== S.2.2 Back End
 
-Functional Properties:
+=== Functional Properties:
 
-*API Gateway*: The back-end will provide a RESTful API that serves as the primary interface for the front-end to interact with back-end services. This API will handle requests related to user authentication, fragment management, match suggestions, and session management.
+*API Gateway*: The back-end will provide a RESTful API that serves as the primary interface for interactions between the front-end and the back-end. This API will handle requests related to user authentication, fragment management, match suggestions, and session management.
 
 *Authentication Service*: The back-end will include an authentication service that integrates with the existing secure authentication system to verify user credentials and manage user sessions.
 
 *Access Database*: The back-end will manage a user database that stores user accounts, authentication credentials, and access permissions.
 
-Non-Functional Properties:
+=== Non-Functional Properties:
 
-*Scalability*: The back-end architecture will be designed to scale horizontally, allowing it to handle an increasing number of users and requests without significant performance degradation.
+*Scalability*: The back-end will be dynamically scaled based on the workload required by the system, allowing it to handle an increasing number of users and requests without significant performance degradation.
 
-*Reliability*: The back-end services will be designed to be highly reliable, with mechanisms in place for error handling, data integrity, and recovery from failures.
+*Reliability*: The back-end will be designed with mechanisms in place for error handling, data integrity, and recovery from failures. The database will be backed up to avoid data loss if system failures were to occur.
 
-S.2.3 AI/ML Cluster
+== S.2.3 AI/ML Cluster
 
-Functional Properties:
+=== Functional Properties:
 
-*Edge Pattern Matching*: The system will include an AI model that analyzes fragment edge shapes and contours to identify potential physical matches. This model will generate edge signature vectors for comparison.
+*Edge Pattern Matching*: The system will include a ML model that analyzes fragment edge shapes to identify potential physical matches. This model will combine fragments with similar edges and output the combined fragment for the user.
 
-*Handwriting Style Classification*: The system will include an AI model that analyzes script characteristics and writing styles to group fragments by scribe or writing period. This model will output style vectors for similarity comparison.
+*Handwriting Style Classification*: The system will include a ML model that analyzes script characteristics and writing styles to group fragments. This model will classify the fragments for comparison.
 
-*Damage Pattern Recognition*: The system will include an AI model that identifies and characterizes damage signatures on fragments. This model will create damage pattern fingerprints to indicate fragments exposed to similar conditions.
+*Damage Pattern Recognition*: The system will include a ML model that identifies and characterizes damage signatures on fragments. This model will create damage pattern fingerprints to indicate fragments exposed to similar conditions.
 
-Non-Functional Properties:
+=== Non-Functional Properties:
 
-*Accuracy*: The AI/ML models will be trained and validated to ensure high accuracy in their predictions, minimizing false positives and false negatives in match suggestions.
+*Accuracy*: The ML models will be trained with a training data set and then validated with a separate validation data set to ensure high accuracy. The model parameters will be adjusted to minimize error and will reduce false positives and false negatives in match suggestions.
 
-*Efficiency*: The AI/ML models will be optimized for efficient processing, ensuring that match suggestions are generated in a timely manner to support user workflows.
+*Efficiency*: The system will be using efficient classification models, which will ensure that match suggestions are generated quickly to reduce the wait time for users.
 
-*Maintainability*: The AI/ML models will be designed to allow for easy updates and retraining as new data becomes available, ensuring that the system can adapt to evolving requirements and datasets.
+*Maintainability*: The ML models will be designed to allow for easy updates and retraining as new data becomes available, ensuring that the system can adapt to evolving requirements and datasets.

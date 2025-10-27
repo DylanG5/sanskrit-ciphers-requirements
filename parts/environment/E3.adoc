@@ -6,7 +6,7 @@ TIP: _Obligations and limits imposed on the project and system by the environmen
 endif::[]
 
 
-The system and project are subject to the following constraints:
+The system will be bounded by several constraints which will restrict its design and implementation.
 
 *Data Privacy Regulations*: The system must comply with relevant data privacy laws. This includes ensuring that user data is collected, stored, and processed in a manner that respects user privacy. Furthermore, the fragments must be stored securely to prevent unauthorized access.
 

@@ -5,10 +5,10 @@ ifdef::env-draft[]
 TIP: _List of elements of the environment that may affect or be affected by the system and project. It includes other systems to which the system must be interfaced. These components may include existing systems, particularly software systems, with which the system will interact — by using their APIs (program interfaces), or by providing APIs to them, or both. These are interfaces provided to the system from the outside world. They are distinct from both: interfaces provided by the system to the outside world (<<s3>>); and technology elements that the system's development will require (<<p5>>)._  <<BM22>>
 endif::[]
 
-The system will interact with the following components:
+The system will use different components from the environment and will provide components to the user to interact with the system. 
 
-*Secure Authentication System*: This component will only give the user access to the system if the user is involved in the field of Buddhist studies which includes professors, researchers, scholars, specialists, and students. The system will use the API provided by the authentication system to verify the user's credentials and grant access accordingly. This may involve OAuth, SAML, or other authentication protocols.
+*Secure Authentication System*: This component will only give the user access to the system if the user is involved in the field of Buddhist studies which includes professors, researchers, scholars, specialists, and students. The system will use the API provided by the authentication system to verify the user's credentials and grant access if their credentials are adequate. 
 
-*Fragment Management System*: This component will manage the storage, retrieval, and organization of text fragments. The system will interface with the fragment management system to store new fragments, retrieve existing ones, and organize them based on user-defined criteria. 
+*Fragment Management System*: This component will manage the storage, retrieval, and organization of text fragments. The system will interact with the fragment management system to store new fragments, retrieve existing ones, and organize them based on the user's preference. 
 
-*Segmentation Tool*: This component will assist users in segmenting fragments so that they can be combined into larger texts. The system will interface with the segmentation tool to provide users with the ability to segment fragments effectively.
+*Segmentation Tool*: This component will assist users in segmenting fragments so that they can be combined into larger texts. The system will interact with the segmentation tool to provide users with the ability to segment fragments effectively.
