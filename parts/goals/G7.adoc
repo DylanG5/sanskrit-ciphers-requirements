@@ -5,6 +5,8 @@ ifdef::env-draft[]
 TIP: _Groups of people who can affect the project or be affected by it, and other places to consider for information about the project and system. It lists stakeholders and other requirements sources. It should define stakeholders as categories of people, not individuals, even if such individuals are known at the time of writing. The main goal of chapter <<g7>> is to avoid forgetting any category of people whose input is relevant to the project. It also lists documents and other information that the project, aside from soliciting input from stakeholders, can consult for requirements information._  <<BM22>>
 endif::[]
 
+The following stakeholders directly shape the system's goals, since their needs, workflows, and constraints determine what the platform must support and what requirements are prioritized.
+
 .Table — Stakeholder categories
 |===
 | Stakeholder | Persona | Category
@@ -40,7 +42,7 @@ Arun is a senior professor and series editor who balances teaching, and frequent
 
 ==== Graduate Students and Research Assistants (RAs):
 
-Graduate students and RAs support the reconstruction work of scholars by looking though large batches of fragments and trying to figure out if they can find matches or not. Sometimes they are given a certain task from the scholars to help them learn certain skills that will help them with future work in reconstruction. They will also be using the main functionality of this web application and therefore are direct stakeholders.
+Graduate students and RAs support the reconstruction work of scholars by looking though large batches of fragments and trying to figure out if they can find matches or not. Sometimes they are given a certain task from the scholars to help them learn certain skills that will help them with future work in reconstruction. They will also be using the main functionality of this web application and therefore are direct stakeholders. The following personas illustrate typical examples of these direct users and their specific needs.
 
 **Stacey (Graduate Student in Buddhist Studies)**
 Stacey is a second year masters student juggling school work as well as learning from her supervising professor on how to tackle problems like the reconstruction of Buddhist text. She is still learning Sanskrit and is sometimes having trouble with figuring out which characters are which. She is also having a hard time learning Sanskrit overall and wants something that can help her with the character recognition and learning Sanskrit.
@@ -59,13 +61,16 @@ Pema is a RA who also helps scholars and professors with their work with reconst
 
 * **Personal Information Protection and Electronic Documents Act (PIPEDA)** - If the system collects or uses personal information (e.g., user accounts, contact details, usage logs), it must comply with PIPEDA: obtain consent, limit use to stated purposes, safeguard data, enable access/correction, and follow breach-notification rules.
 +
+For more information, please refer to:
 - https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/
 
 * **Web Accessibility** - Validate the UI against WCAG 2.2 Level AA and Ontario’s AODA (IASR) web accessibility requirements to ensure inclusive access (keyboard navigation, contrast, alt text, captions).
 +
+For more information, please refer to:
 - https://www.w3.org/TR/wcag/
 - https://www.ontario.ca/laws/regulation/110191
 
 * **Protection of Restricted/Private Images (Data Security & Access Control)** - Restricted or unpublished manuscript images must be protected via role-based access, least-privilege permissions, encryption in transit and at rest.
 +
+For more information, please refer to:
 - https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final
