@@ -5,7 +5,7 @@
 .2+| *Version* 2+| *Delivery* 2+| *Feedback*
 | _Deadline_ | _Delivered_ | _Received_ | _Integrated_ 
 
-| **V1** | October 9th | October 9th | October 9th | October 9th
+| **V1** | October 9th | October 9th | October 27th | November 12th
 | **V2** | | | |
 | **V3** | | | |
 |===

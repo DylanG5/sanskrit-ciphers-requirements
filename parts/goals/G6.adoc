@@ -5,6 +5,8 @@ ifdef::env-draft[]
 TIP: _Aspects that the system need not address. It states what the system will not do. This chapter addresses a key quality attribute of good requirements: the requirements must be delimited (or “scoped”). <<g6>> is not, however, the place for an analysis of risks and obstacles, which pertain to the project rather than the goals and correspondingly appears in chapter <<p6>>._  <<BM22>>
 endif::[]
 
+Unexpected or unsupported inputs (such as non-image files or unreadable formats) will be rejected with an error message rather than processed.
+
 To clearly delimit the project scope, the following activities are explicitly excluded from the system’s objectives:
 
 ==== Manual Scholarly Judgment
