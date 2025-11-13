@@ -1,3 +1,14 @@
+== Control Information
+
+[cols="^1,^2,^2,^2,^2"]
+|===
+.2+| *Version* 2+| *Delivery* 2+| *Feedback*
+| _Deadline_ | _Delivered_ | _Received_ | _Integrated_ 
+
+| **V1** | October 9th | October 9th | October 9th | October 9th
+| **V2** | | | |
+| **V3** | | | |
+|===
 
 ifdef::author_1[]
 [discrete]
