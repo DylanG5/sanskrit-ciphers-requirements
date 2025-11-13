@@ -6,11 +6,11 @@
 |===
 |Section | Version | Lead | Delivered on| Reviewer | Approved on
 
-| **<<g1>>** | 1.0 | Omar | October 9th, 2025 |  |
+| **<<g1>>** | 1.0 | Omar | October 9th, 2025 |  Dylan | October 9th, 2025
 | **<<g2>>** | 1.0 | Umar | October 2nd, 2025 |  |
 | **<<g3>>** |  |  |  |  |
 | **<<g4>>** |  |  |  |  |
-| **<<g5>>** | 1.0 | Omar | October 9th, 2025 |  |
-| **<<g6>>** | 1.0 | Omar | October 9th, 2025 |  |
-| **<<g7>>** | 1.0 | Omar | October 9th, 2025 |  |
+| **<<g5>>** | 1.0 | Omar | October 9th, 2025 |  Umar | October 9th, 2025
+| **<<g6>>** | 1.0 | Omar | October 9th, 2025 |  Aswin | October 9th, 2025
+| **<<g7>>** | 1.0 | Omar | October 9th, 2025 |  Youssef | October 9th, 2025
 |===
