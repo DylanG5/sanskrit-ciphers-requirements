@@ -4,34 +4,37 @@ ifdef::env-draft[]
 TIP: *Overall structure expressed by the list of major software and, if applicable, hardware parts.*  <<BM22>>
 endif::[]
 
-The system consists of three main clusters that work together to enable scholars to reconstruct ancient Buddhist manuscript fragments through computational analysis and interactive manipulation.
+The system consists of three main clusters that work together to support local fragment exploration, reconstruction, and ML-assisted metadata enrichment.
 
 ==== Front-end Cluster
 
-* *User Authentication Interface*: Login and session management components for secure user access.
-* *Fragment Upload Interface*: Components for uploading manuscript fragment images with support for batch uploads and image format validation.
-* *Interactive Canvas Module*: A drag-and-drop workspace where users can display, move, rotate, zoom, and inspect one or multiple fragment images simultaneously.
-* *Match Discovery Module*: Interface for triggering AI model analysis and viewing match suggestions for selected fragments.
-* *Progress Management Module*: Tools for saving and loading user study sessions, including fragment arrangements, annotations, and match evaluations.
+* *Home & Search Interface*: Project list and fragment ID search with autocomplete.
+* *Fragment Browser & Filters*: Sidebar list with pagination and filters for line count, script type, edge flags, circle detection, and custom fields.
+* *Interactive Canvas Module*: Drag-and-drop placement with move/resize/rotate, multi-select, lock/unlock, grid toggle, and segmented/original view toggle.
+* *Metadata Editor*: View and edit fragment metadata (line count, script type, edge flags, circle, scale, custom fields).
+* *Upload Dialog*: Import new fragment images into the local data store.
+* *Project/Session Management*: Create, rename, delete, save, and restore canvas projects with auto-save.
 
 ==== Backend Cluster
 
-* *API Gateway*: RESTful API endpoints for handling frontend requests and coordinating backend operations.
-* *Authentication Service*: User authentication, authorization, and session management.
-* *Image Processing Service*: Preprocessing pipeline for fragment normalization, orientation correction, and format standardization.
-* *Database Access Layer*: Service layer managing interactions with all database systems.
-* *Match Orchestration Service*: Coordinates requests to AI/ML models and aggregates results into ranked match suggestions.
+* *Electron IPC Layer*: Local interface between the UI and backend services.
+* *Fragment Data Service*: Query, search, and update fragment metadata.
+* *Project Persistence Service*: Save/load canvas state.
+* *File Management Service*: Image import, storage, and segmented image cache.
+* *Edge Matching Service*: Backend edge comparison for candidate fragment matches.
 
 ===== Data Storage Cluster
 
-* *Fragment Image Database*: Stores high-resolution fragment images, preprocessed versions, and image metadata (resolution, format, upload date).
-* *User Database*: Maintains user accounts, authentication credentials, preferences, and access permissions.
-* *Project Database*: Tracks reconstruction projects, fragment arrangements, match history, confidence scores, user progress states, and study session snapshots.
+* *Fragment Database (SQLite)*: Image paths and metadata (edges, line counts, script type, segmentation, scale, circle).
+* *Project Database (SQLite)*: Project records and stored canvas layouts.
+* *Custom Filter Registry*: User-defined metadata fields and options.
 
 ==== AI/ML Cluster
 
-* *Edge Pattern Matching Model*: Analyzes fragment edge shapes and contours to identify physical matches where fragments may have been torn or broken from the same page. Generates edge signature vectors for comparison.
-* *Handwriting Style Classifier*: Analyzes script characteristics, writing style, and paleographic features to group fragments by scribe or writing period. Outputs style vectors for similarity comparison.
-* *Damage Pattern Recognition Model*: Identifies and characterizes damage signatures including tears, stains, creases, and deterioration patterns. Creates damage pattern fingerprints that indicate fragments exposed to similar conditions.
-* *Text Extraction Model*: Extracts Sanskrit text from fragment images, handling various script styles and deterioration levels. Outputs transcribed text and character-level confidence scores.
-* *Content Similarity Model*: Performs semantic analysis on extracted text to identify thematic and linguistic connections between fragments. Generates content embeddings for matching.
+* *Segmentation Processor (You Only Look Once, YOLO)*: Extracts contours and produces transparent fragments for the UI.
+* *Line Count Classifier (Convolutional Neural Network, CNN)*: Predicts number of text lines.
+* *Line Detection Processor (YOLO)*: Detects individual text lines and stores line boxes/count.
+* *Script Type Classifier*: Predicts script type labels with confidence.
+* *Edge Detection Processor*: Infers border edges and edge-piece flags from contours.
+* *Circle Detection Processor*: Detects circular marks.
+* *Scale Detection Processor*: Estimates pixels-per-unit from rulers using optical character recognition (OCR) and computer vision (CV).

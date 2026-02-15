@@ -7,59 +7,48 @@ endif::[]
 
 ==== Core System Functions
 
-The Sanskrit Manuscript Fragment Reconstruction Platform provides a web-based interface for Buddhist Studies scholars to systematically search, filter, and reconstruct ancient texts from the British Library's collection of 21,000 manuscript fragments. The system operates through three primary functional domains:
+The Sanskrit Manuscript Fragment Reconstruction Platform provides a local desktop interface for Buddhist Studies scholars to search, filter, and reconstruct ancient texts using a local SQLite dataset. The system operates through three primary functional domains:
 
-==== 1. Fragment Preprocessing and Analysis
+==== 1. Fragment Processing and Metadata Enrichment
 
-*Image Processing Pipeline*
-* Automatically segment uploaded fragment images to isolate manuscript content from background
-* Determine actual physical size measurements of fragments from image data
-* Extract edge patterns, damage signatures, and physical characteristics for matching
-* Normalize images across different photography conditions and lighting for consistent analysis
+*Image Segmentation and Feature Extraction*
+* Segment fragment images to isolate manuscript content
+* Extract contour-based metadata (edge flags, edge piece)
+* Detect circles and estimate scale from rulers where present
 
 *Metadata Extraction*
-* Extract script characteristics, writing style patterns, and paleographic features
-* Identify number of text rows, folio information, and other codicological features
-* Generate searchable metadata attributes for filtering and discovery
-* Process both British Library collection and user-submitted images through the same pipeline
+* Predict script type labels
+* Predict line count and line detections
+* Store metadata in a searchable database
 
-==== 2. Criteria-Based Search and Filtering System
+==== 2. Search, Filtering, and Edge Matching
 
 *Multi-Criteria Filtering Interface*
 * Allow researchers to enter specific fragment IDs for targeted searches
-* Filter fragments by script type, number of text rows, folio numbers, physical dimensions
-* Apply damage pattern matching and edge compatibility criteria
-* Combine multiple filter criteria to narrow search results to relevant fragments
+* Filter fragments by script type, line count, edge flags, circles, and custom fields
+* Combine multiple filter criteria to narrow search results
 
-*Puzzle-Like Matching Engine*
-* Compare physical edge patterns and damage signatures for potential fits
-* Identify fragments with compatible breaks, tears, and wear patterns
-* Generate ranked lists of potential matches based on physical compatibility
-* Support both automated matching suggestions and manual criteria specification
+*Edge Matching*
+* Compare tear-edge descriptors to produce candidate matches
 
 ==== 3. Interactive Reconstruction Workspace
 
 *Canvas-Based Assembly Interface*
-* Provide drag-and-drop canvas for virtually arranging and testing fragment combinations
-* Enable real-time manipulation of fragment positions and orientations
-* Support snap-to-fit functionality based on edge pattern analysis
-* Allow researchers to build and test reconstruction hypotheses visually
+* Provide drag-and-drop canvas for arranging fragment images
+* Enable manipulation of fragment positions, size, and rotation
+* Support grid alignment and segmented/original views
 
 *Session Management*
 * Save and restore reconstruction work sessions
-* Support multiple concurrent reconstruction projects
-* Enable export of reconstruction layouts and fragment arrangements
-* Track reconstruction progress and fragment relationship discoveries
+* Support multiple reconstruction projects with auto-save
 
 ==== Integration and Data Management
 
-*British Library Integration*: Primary integration with British Library's collection of 21,000 manuscript fragment images, with automated processing pipeline for the complete collection.
-
-*User Image Submission*: Support for researchers to upload their own fragment images, which are automatically processed through the same segmentation, measurement, and feature extraction pipeline as the core collection.
-
-*Metadata and Provenance Management*: Maintain comprehensive metadata including fragment IDs, provenance information, physical measurements, and extracted features while preserving original catalog information.
+*Local Data Store*: Fragment images and metadata are stored locally in a SQLite database.
+*User Image Submission*: Researchers can upload new fragment images for inclusion in the dataset.
+*Custom Metadata*: Users can define and edit custom metadata fields for filtering and analysis.
 
 ==== Workflow Integration
 
-The system supports a streamlined workflow: researchers enter fragment IDs or apply filter criteria → system returns matching fragments based on specified characteristics → researchers use the interactive canvas to test physical combinations → save reconstruction sessions for future work. The platform architecture enables efficient processing of the 21,000-fragment collection with responsive search and real-time canvas manipulation.
+The system supports a streamlined workflow: researchers search or filter fragments → drag fragments to the canvas to test arrangements → edit metadata as needed → save reconstruction sessions for later → run the ML pipeline to enrich metadata on new or unprocessed fragments.
 

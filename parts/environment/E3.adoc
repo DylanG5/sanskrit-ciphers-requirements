@@ -8,8 +8,8 @@ endif::[]
 
 The system will be bounded by several constraints which will restrict its design and implementation.
 
-*Data Privacy Regulations*: The system must comply with relevant data privacy laws. This includes ensuring that user data is collected, stored, and processed in a manner that respects user privacy. Furthermore, the fragments must be stored securely to prevent unauthorized access.
+*Data Privacy Regulations*: The system must comply with relevant data privacy laws. This includes ensuring that fragment images and metadata stored locally are protected and handled appropriately.
 
-*Performance Requirements*: The system must be capable of handling a large number of concurrent users without significant degradation in performance. This includes ensuring that response times for user actions remain within acceptable limits, even under high load conditions.
+*Performance Requirements*: The system must keep the desktop UI responsive when browsing and manipulating large fragment sets.
 
-*Security Standards*: The system must adhere to established security standards to protect against potential threats. This includes implementing robust authentication and authorization mechanisms to prevent access to unauthorized users.
+*Security Standards*: The system must protect local data from accidental loss or corruption, including safe database writes and backups where applicable.

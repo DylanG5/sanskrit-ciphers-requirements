@@ -6,33 +6,24 @@ TIP: _Classification of the behaviors, interfaces and scenarios (<<s2>>, <<s3>> 
 endif::[]
 
 ==== Critical (Must-Have)
-* Secure login and authentication (S.4.1) 
-** required for system access and user management.
-* Fragment upload, orientation, and normalization (S.4.2) 
-** enables the core workflow of preparing digitized manuscripts.
-* Fragment matching and reconstruction (S.4.3) 
-** essential for achieving the project’s scholarly goals.
-* Script identification (S.4.4) 
-** foundational to understanding and categorizing fragments.
-* Database search and exploration (S.4.6) 
-** critical for enabling scholars to retrieve and compare fragments efficiently.
+* Fragment search, filtering, and placement on the canvas (S.4.1, S.4.2) 
+** enables the core reconstruction workflow.
+* Canvas manipulation (move, resize, rotate, lock) (S.4.2) 
+** required for arranging fragments accurately.
+* Project save and restore (S.4.3) 
+** preserves reconstruction state across sessions.
 
 ==== Important (Should-Have)
-* Transcription assistance (S.4.5) 
-** significantly enhances usability and research speed, but manual transcription remains possible if OCR fails.
-* Match sensitivity tuning and side-by-side comparison (alternate flow of S.4.3) 
-** improves researcher control and reliability of results.
-* Manual overrides for classification and orientation 
-** ensures system flexibility where automation falls short.
-* Exporting search results and transcriptions 
-** supports collaboration and documentation.
+* Metadata viewing and editing (S.4.4) 
+** supports curation and correction of fragment metadata.
+* Uploading new fragments (S.4.5) 
+** allows expanding the dataset.
+** populates segmentation and metadata fields used by filters and display.
+* Custom filters (S.4.2, S.4.4) 
+** supports project-specific metadata needs.
 
 ==== Optional (Nice-to-Have)
-* Session management (save, load, version history) 
-** valuable for long-term projects but not mandatory for demonstrating proof-of-concept.
-* Annotation features on fragments  
-** enhances usability but not required for minimal viable system.
-* Integration with external segmentation tools 
-** useful for advanced workflows but not critical for initial delivery.
-* Read-only sharing links 
-** convenient for collaboration but not essential for project success.
+* Edge matching prototype outputs (S.4.6) 
+** useful for research exploration but not integrated into the UI.
+* Manual scale setting from canvas resize (S.4.4) 
+** helpful for calibration when auto-detection fails.

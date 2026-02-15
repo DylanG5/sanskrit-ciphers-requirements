@@ -10,52 +10,69 @@ endif::[]
 
 === Functional Properties:
 
-*User Authentication*: The system will provide a secure authentication mechanism to ensure that only authorized users can access the system. This will involve integrating with an existing authentication system that verifies user credentials.
+*Fragment Search & Browsing*: The system will provide a home screen with project history and fragment ID search (including autocomplete) to quickly locate fragments.
 
-*Fragment Management*: The system will allow users to upload, store, retrieve, and organize text fragments. Users will be able to create collections of fragments and manage them through a user-friendly interface.
+*Filtering*: The system will allow users to filter fragments by line count range, script type, edge flags, circle detection, and user-defined custom fields.
 
-*Display Fragments*: The system will display all of the text fragments in a clear and organized manner, allowing users to view and navigate through their collections easily. It will allow users to view multiple fragments in the same display and provide tools for zooming, panning, and rotating fragments.
+*Canvas Manipulation*: The system will support drag-and-drop placement of fragments onto a canvas with move, resize, rotate, multi-select, lock/unlock, grid toggle, and segmented/original view toggle.
 
-*Match Suggestions*: The system will suggest matches for text fragments based on the edge patterns, damage patterns, and content. Users will be able to view these suggestions and determine their validity. The system will provide an approximate probability score for each match suggestion.
+*Metadata Viewing & Editing*: The system will display fragment metadata and allow users to edit fields such as line count, script type, edge flags, circle detection, scale data, and custom fields.
 
-*Session Management*: The system will allow users to save their current study sessions, including the arrangement of fragments, annotations, and any match evaluations they have made. Users will be able to load previous sessions to continue their work.
+*Project Management*: The system will allow users to create, rename, delete, auto-save, and restore reconstruction projects.
+
+*Fragment Upload*: The system will support importing new fragment images into the local database.
 
 === Non-Functional Properties:
 
 *Usability*: The front-end interface will be designed to be intuitive and user-friendly, ensuring that users can easily navigate and utilize the system's features without extensive training.
 
-*Performance*: The front-end will be optimized for performance, ensuring that images load quickly and that user interactions are responsive, even when handling large collections of fragments.
+*Performance*: The front-end will be optimized for responsiveness during canvas interactions and while browsing large fragment collections via pagination.
 
 == S.2.2 Back End
 
 === Functional Properties:
 
-*API Gateway*: The back-end will provide a RESTful API that serves as the primary interface for interactions between the front-end and the back-end. This API will handle requests related to user authentication, fragment management, match suggestions, and session management.
+*Electron IPC Interface*: The back-end will provide a local IPC interface between the Electron main process and the UI for fragment, project, file, and custom-filter operations.
 
-*Authentication Service*: The back-end will include an authentication service that integrates with the existing secure authentication system to verify user credentials and manage user sessions.
+*Fragment Data Access*: The back-end will query, search, and update fragment metadata in SQLite.
 
-*Access Database*: The back-end will manage a user database that stores user accounts, authentication credentials, and access permissions.
+*Project Persistence*: The back-end will save and load canvas state for projects.
+
+*File Import & Storage*: The back-end will handle image selection, import, and storage, including a cache for segmented images.
+
+*Custom Filters*: The back-end will allow creation, update, and deletion of custom metadata fields used for filtering.
+
+*Edge Matching*: The back-end will compare tear-edge descriptors to generate candidate matches.
 
 === Non-Functional Properties:
 
-*Scalability*: The back-end will be dynamically scaled based on the workload required by the system, allowing it to handle an increasing number of users and requests without significant performance degradation.
+*Reliability*: The back-end will include error handling and maintain database integrity for local operations.
 
-*Reliability*: The back-end will be designed with mechanisms in place for error handling, data integrity, and recovery from failures. The database will be backed up to avoid data loss if system failures were to occur.
+*Portability*: The back-end will run locally as part of the desktop application without requiring external services.
 
 == S.2.3 AI/ML Cluster
 
 === Functional Properties:
 
-*Edge Pattern Matching*: The system will include a ML model that analyzes fragment edge shapes to identify potential physical matches. This model will combine fragments with similar edges and output the combined fragment for the user.
+*Segmentation*: The system will segment fragments, store contour coordinates, and generate transparent PNGs for UI display.
 
-*Handwriting Style Classification*: The system will include a ML model that analyzes script characteristics and writing styles to group fragments. This model will classify the fragments for comparison.
+*Line Count Classification*: The system will predict the number of text lines in a fragment.
 
-*Damage Pattern Recognition*: The system will include a ML model that identifies and characterizes damage signatures on fragments. This model will create damage pattern fingerprints to indicate fragments exposed to similar conditions.
+*Line Detection*: The system will detect individual text lines and store bounding boxes and counts.
+
+*Script Type Classification*: The system will classify script type labels with confidence scores.
+
+*Edge Detection*: The system will infer border edges (top, bottom, left, right) and edge-piece flags based on contours.
+
+*Circle Detection*: The system will detect circular marks and store a boolean flag.
+
+*Scale Detection*: The system will estimate pixels-per-unit for fragments that include rulers.
+
 
 === Non-Functional Properties:
 
-*Accuracy*: The ML models will be trained with a training data set and then validated with a separate validation data set to ensure high accuracy. The model parameters will be adjusted to minimize error and will reduce false positives and false negatives in match suggestions.
+*Configurability*: The pipeline will be configuration-driven, with model versions recorded in the database for traceability.
 
-*Efficiency*: The system will be using efficient classification models, which will ensure that match suggestions are generated quickly to reduce the wait time for users.
+*Efficiency*: The pipeline will support batch processing with resume capability and optional dry-run mode.
 
-*Maintainability*: The ML models will be designed to allow for easy updates and retraining as new data becomes available, ensuring that the system can adapt to evolving requirements and datasets.
+*Maintainability*: The ML pipeline will use a plugin architecture to add or update processors.

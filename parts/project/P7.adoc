@@ -22,7 +22,7 @@ endif::[]
 
 ==== Objectives
 * Understand current manual workflows and pain points in fragment reconstruction.
-* Identify functional needs for automated detection, matching, and transcription support.
+* Identify functional needs for automated segmentation, metadata extraction, and edge matching support.
 * Capture usability and workflow-integration requirements for academic research settings.
 * Establish expectations for accuracy, performance, and collaboration/sharing features.
 

@@ -7,14 +7,14 @@ endif::[]
 
 ==== Technical Risks
 
-* OCR accuracy on damaged Sanskrit fragments may remain below acceptable thresholds. 
-** Mitigation: Evaluate existing OCR models or fine-tune lightweight models on curated samples. Integrate fallbacks like similarity-based matching when OCR fails.  
+* Segmentation and metadata accuracy on damaged fragments may remain below acceptable thresholds. 
+** Mitigation: Evaluate model performance on curated samples and allow manual metadata edits in the UI.  
 
 * Integration of multiple models and pipelines could cause performance bottlenecks. 
 ** Mitigation: Modular architecture with asynchronous execution and caching. Early profiling to identify bottlenecks.  
 
-* Image preprocessing may fail for severely degraded or rotated fragments.  
-** Mitigation: Implement multi-stage preprocessing (denoising, rotation correction, cropping). Validate on a diverse set of fragments during POC.  
+* Segmentation may fail for severely degraded or irregular fragments.  
+** Mitigation: Validate on diverse samples and log failures for review; allow manual corrections where possible.  
 
 ==== Organizational Risks
 
@@ -39,7 +39,7 @@ endif::[]
 ** Strong project management practices (CI/CD, GitHub Projects, PR reviews).  
 
 * Weaknesses  
-** Limited prior exposure to Sanskrit OCR and palaeography.  
+** Limited prior exposure to Sanskrit palaeography and domain-specific datasets.  
 ** Heavy reliance on external resources (pre-trained models, domain expert, etc.).  
 
 * Opportunities
@@ -47,6 +47,6 @@ endif::[]
 ** Potential collaboration with scholars and institutions holding large fragment collections.  
 
 * Threats  
-** OCR accuracy may not meet scholarly expectations.  
+** Segmentation and classification accuracy may not meet scholarly expectations.  
 ** Project timeline is constrained by academic calendar deadlines.  
 ** Risk of overfitting to small or curated test datasets.  
