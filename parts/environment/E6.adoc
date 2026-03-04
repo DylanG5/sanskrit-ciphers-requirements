@@ -13,7 +13,7 @@ The Sanskrit Manuscript Fragment Reconstruction Platform operates as a non-deter
 
 *Human Scholar Final Authority*: All reconstruction conclusions and academic decisions must be made by qualified human scholars. The AI system provides suggestions and pattern matching assistance only, with scholars retaining complete authority over interpretation and validation of results.
 
-*Non-Deterministic AI Acknowledgment*: The system operates with the understanding that AI-powered fragment matching is inherently non-deterministic and probabilistic. Results are presented as suggestions requiring scholarly evaluation rather than definitive answers.
+*Non-Deterministic AI Acknowledgment*: The system operates with the understanding that ML-assisted analysis and edge-based matching are inherently probabilistic. Results are presented as suggestions requiring scholarly evaluation rather than definitive answers.
 
 *Academic Independence*: System operation cannot substitute for scholarly judgment or critical analysis. Researchers must maintain their role as the primary interpreters of manuscript evidence and cultural context.
 

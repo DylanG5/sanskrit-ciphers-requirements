@@ -8,41 +8,35 @@ endif::[]
 The following external technology elements are required for the successful development and deployment of the Sanskrit Cipher system:
 
 ==== Programming Languages
-- **Python** for machine learning models, image preprocessing, and backend pipelines.
-- **JavaScript/TypeScript** for frontend and backend development.
-- **C++** may be required for performance-critical modules.
+- **Python** for machine learning models and the ML pipeline.
+- **JavaScript/TypeScript** for the Electron desktop app.
 
 ==== Libraries & Frameworks
-- **OpenCV** for image preprocessing and orientation correction.
-- **PyTorch / TensorFlow** for machine learning models, including OCR and script identification.
-- **scikit-learn** for probabilistic matching algorithms.
-- **SQLAlchemy** for database abstraction.
-- **React** for frontend development.
-- **Tailwind CSS** for frontend styling.
-- **Flask, FastAPI, or Django** as the backend API framework.
+- **OpenCV** for image processing.
+- **PyTorch** for machine learning models.
+- **You Only Look Once (YOLO)** models (Ultralytics) for segmentation and line detection.
+- **EasyOCR** for scale detection from rulers.
+- **React** and **Electron** for the desktop UI.
+- **Vite** for frontend tooling.
+- **Cascading Style Sheets (CSS)** via **Tailwind** for styling.
+- **SQLite** with a Node binding for local persistence.
 
 ==== Pre-trained Models
-- OCR models trained on Sanskrit or related Indic scripts.
-- Potential use of lightweight custom models if pre-trained solutions prove insufficient.
+- YOLO-based segmentation and line detection models.
+- Convolutional Neural Network (CNN)-based line count and script type classifiers.
 
 ==== Development Tools
-- **VSCode** as the main IDE.
+- **VSCode** as the main Integrated Development Environment (IDE).
 - **LaTeX/Markdown** for documentation.
-- **Doxygen** for API documentation.
-- **Postman** for API testing.
 
 ==== Testing & Code Quality Tools
-- **Pytest** and **coverage.py** for backend testing and coverage.
-- **MyPy** and **Ruff** for Python type checking and linting.
-- **Jest** with React Testing Library for frontend testing.
-- **ESLint** and **Prettier** for frontend linting and formatting.
-- **Valgrind** for C++ modules, if used.
+- **Pytest** for Python tests.
+- **ESLint** for frontend linting.
 
 ==== Build & Automation
-- **Makefiles** for automated builds of modules and LaTeX documents.
-- **GitHub Actions** for CI/CD, including linting, testing, Docker builds, and PDF generation.
+- **Makefiles** for document builds.
+- **GitHub Actions** for continuous integration/continuous delivery (CI/CD).
 
 ==== Deployment & Infrastructure
-- **Docker** for containerized environments.
 - **GitHub Projects** for version control and project management.
-- **PostgreSQL or SQLite** as the database backend.
+- **SQLite** as the local database backend.

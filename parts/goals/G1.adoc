@@ -6,17 +6,17 @@ TIP: _High-level view of the project: organizational context and reason for buil
 endif::[]
 
 
-The textual history of Indian Buddhism is fragmented across thousands of manuscript folios, preserved only in partial, damaged, or scattered forms. Traditionally, scholars reconstruct these texts manually through paleographic study, transcription, and content comparison; a slow and error-prone process. Scholars in Religious Studies increasingly have access to digitized collections of ancient manuscripts, such as the approximately 21,000 photographed fragments in one major archive. While some existing computational tools exist for pattern recognition and Optical Character Recognition (OCR) none can tackle this problem as they are not designed for irregular, damaged, or arbitrarily oriented manuscript fragments. Without computational assistance, much of the potential in these digital collections remains locked and underutilized. Our goal is to build an end to end system that can take these fragments as inputs and return a list of the most likely matches based on certain Artificial Intelligence (AI) algorithms. This coupled with a User Interface (UI) that can be easy for users to learn and help them with their research in constructing these fragments. For a more details refer to Problem Statement and Goals. 
+The textual history of Indian Buddhism is fragmented across thousands of manuscript folios, preserved only in partial, damaged, or scattered forms. Traditionally, scholars reconstruct these texts manually through paleographic study, transcription, and content comparison; a slow and error-prone process. Scholars in Religious Studies increasingly have access to digitized collections of ancient manuscripts, such as the approximately 21,000 photographed fragments in one major archive. While some existing computational tools exist for pattern recognition none can tackle this problem as they are not designed for irregular, damaged, or arbitrarily oriented manuscript fragments. Without computational assistance, much of the potential in these digital collections remains locked and underutilized. Our goal is to build an end to end system that can take these fragments as inputs, enrich them with metadata, and provide edge-based matching assistance through a usable local desktop interface for reconstruction work. For a more details refer to Problem Statement and Goals. 
 
 ==== The general objectives of the project are to:
 
-* Develop AI-supported software capable of preprocessing, analyzing, and matching manuscript fragments to accelerate scholarly reconstruction.
-* Create tools to automatically regularize image orientation, detect edges and shapes, identify paleographic scripts, and perform OCR transcription tuned for ancient Sanskrit manuscripts.
-* Provide a searchable, structured database that enables scholars to track, organize, and connect fragments across collections.
+* Develop Artificial Intelligence (AI)-supported software capable of segmenting fragments, extracting metadata, and supporting edge-based matching to accelerate scholarly reconstruction.
+* Create tools to detect edges, line counts, script types, circles, and scale information from fragment images, with manual metadata editing when needed.
+* Provide a searchable, structured database and user interface (UI) that enables scholars to track, organize, and connect fragments across collections.
 
 .Given the complexity of the project, the work will be divided into clusters, each addressing a distinct but interdependent stage of the scholarly workflow (More information on this in section xref:s1[(S.1) Components]):
-* **Front-end Cluster** — Scholar-facing web app for secure login, batch uploads, an interactive canvas to arrange fragments, view AI matches, and save sessions.
-* **Backend Cluster** — Core services (Application Programming Interface (API) gateway, authentication, preprocessing orchestration, database access) that power and persist all workflows.
-* **AI/Machine Learning (ML) Cluster** — Model services for edge/damage matching, script/handwriting classification, OCR text extraction, and content similarity scoring.
+* **Front-end Cluster** — Scholar-facing desktop app for fragment search, filtering, an interactive canvas to arrange fragments, metadata editing, uploads, and project saving.
+* **Backend Cluster** — Local services (inter-process communication (IPC), database access, project persistence, edge matching) that power and persist workflows.
+* **AI/Machine Learning (ML) Cluster** — Model services for segmentation, line count detection, script type classification, edge detection, circle detection, and scale estimation.
 
 Together, these clusters form an integrated system that not only assists in reconstructing ancient manuscripts but also builds a model for applying computational puzzle-solving approaches to the humanities at large.

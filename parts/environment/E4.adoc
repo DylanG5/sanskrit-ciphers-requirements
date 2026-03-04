@@ -11,4 +11,4 @@ The environment is assumed to have properties that will influence the design and
 
 *Dataset Availability*: The number of high-quality text fragments available for the system is large enough for classification. The system's functionality depends on this assumption, as it trains the model on a dataset of text fragments. Although it is a subset of all existing fragments, this data set is expected to represent all fragments properly so that the model will be able to process new fragments effectively. 
 
-*Technological Infrastructure*: The users will have access to modern computing devices and reliable internet connections. This assumption enables the system to implement advanced computational resources without being constrained by the limitations of users' hardware.
+*Technological Infrastructure*: Users will have access to modern computing devices with sufficient storage to host the local database and images. A graphics processing unit (GPU) is optional but may be required for reasonable ML pipeline performance.

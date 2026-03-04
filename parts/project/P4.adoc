@@ -94,27 +94,23 @@ endif::[]
 
 *Tasks:*
 
-- Implement OCR text extraction from manuscript fragments
+- Implement fragment segmentation with contour extraction
 
-- Develop image normalization pipeline (rotation correction, standardization)
+- Build a basic canvas interface for drag-and-drop fragment arrangement
 
-- Create feature extraction for edges, text content, and damage patterns
+- Implement initial metadata extraction (line count and script type)
 
-- Implement similarity algorithms with confidence scores
-
-- Build basic web interface for fragment upload and viewing results
+- Store fragment metadata in a local SQLite database
 
 *Deliverables:*
 
 - Functional POC demonstrating:
 
-  * 60% OCR text extraction accuracy
+  * Segmentation output with stored contours
 
-  * 95% orientation correction success
+  * Canvas manipulation (move/resize/rotate)
 
-  * Feature extraction of edge patterns, damage signatures, and text regions
-
-  * Consistent similarity rankings
+  * Basic metadata fields stored in SQLite
 
 - POC demonstration presentation
 
@@ -127,7 +123,7 @@ endif::[]
 
 - Complete detailed component specifications
 
-- Document API contracts
+- Document IPC interfaces and database schema
 
 *Deliverables:*
 
@@ -138,13 +134,11 @@ endif::[]
 
 *Tasks:*
 
-- Implement complete frontend (multi-fragment canvas, match discovery, save/load, search/filter, export)
+- Implement complete desktop app (search/filter, multi-fragment canvas, save/load, metadata editing, uploads)
 
-- Build full backend (database operations, model orchestration, async processing, caching)
+- Build local backend services (SQLite operations, IPC handlers, edge matching)
 
-- Deploy all five AI models (70% OCR accuracy, 70% top-5 match precision)
-
-- Achieve 80% test coverage for frontend and backend
+- Deploy ML pipeline processors (segmentation, line count, script type, edge detection, circle, scale)
 
 - Conduct usability testing with domain expert
 
